@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $Dark-Green;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &__logo {
+    margin-left: 4vw;
+    &__svg {
+      width: 5vw;
+      cursor: pointer;
+    }
+    &__title:hover {
+      color: $Coral;
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    margin-right: 2vw;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 85%;
+      &__link {
+        cursor: pointer;
+        color: $Light-Grey;
+        font-family: $Main-font;
+        font-weight: 600;
+      }
+      &__link:hover {
+        color: $Coral;
+      }
+    }
+    &__flags {
+      display: flex;
+      justify-content: space-around;
+      width: 15%;
+      &__container {
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__triangle {
+          color: $Light-Grey;
+        }
+        &__uk {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+        }
+        &__uk:hover {
+          transform: scale(1.2);
+        }
+        &__fr {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+        }
+        &__fr:hover {
+          transform: scale(1.2);
+        }
+        &__nl {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+        }
+        &__nl:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

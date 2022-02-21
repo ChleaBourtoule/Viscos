@@ -1,0 +1,17 @@
+.prices {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $Coral;
+  &__title {
+    color: $Dark-Green;
+  }
+  &__subtitle {
+    color: $Light-Grey;
+    background-color: $Light-Green;
+    border-radius: 20px;
+    padding: 1vh 2vw;
+  }
+}
