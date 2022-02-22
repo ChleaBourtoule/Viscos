@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: $Dark-Green;
+  background-color: $Light-Grey;
   width: 100%;
   position: sticky;
   top: 0;
@@ -12,7 +12,7 @@
   &__logo {
     margin-left: 4vw;
     &__svg {
-      width: 5vw;
+      width: 4vw;
       cursor: pointer;
     }
     &__title:hover {
@@ -24,7 +24,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 70vw;
+    width: 80vw;
     margin-right: 2vw;
     &__list {
       display: flex;
@@ -33,7 +33,7 @@
       width: 85%;
       &__link {
         cursor: pointer;
-        color: $Light-Grey;
+        color: $Dark-Green;
         font-family: $Main-font;
         font-weight: 600;
       }
@@ -51,7 +51,7 @@
         flex-direction: column;
         align-items: center;
         &__triangle {
-          color: $Light-Grey;
+          color: $Coral;
         }
         &__uk {
           width: 2vw;

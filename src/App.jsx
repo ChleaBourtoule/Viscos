@@ -1,5 +1,6 @@
 import "./App.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 import Header from "./components/Header";
 import Home from "./components/Pages/Home";
@@ -11,12 +12,13 @@ import Booking from "./components/Pages/Booking";
 import Region from "./components/Pages/Region";
 
 function App() {
+  const [language, setLanguage] = useState("fr");
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header language={language} setLanguage={setLanguage} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home lang={language} />} />
           <Route path="/pitches" element={<Pitches />} />
           <Route path="/services" element={<Services />} />
           <Route path="/activities" element={<Activities />} />
