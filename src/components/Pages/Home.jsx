@@ -1,10 +1,35 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Card from "../Card";
 
 import { AiFillStar } from "react-icons/ai";
-import { FaTree, FaShower, FaTrophy, FaBinoculars } from "react-icons/fa";
 
 const Home = () => {
+  const cards = [
+    {
+      param: "/pitches",
+      icon: "tree",
+      txt: "Les emplacements et locations",
+      subtxt: "Calmes et ombragés",
+    },
+    {
+      param: "/services",
+      icon: "shower",
+      txt: "Les services",
+      subtxt: "Pour votre confort",
+    },
+    {
+      param: "/activities",
+      icon: "trophy",
+      txt: "Les activités",
+      subtxt: "Nature & Loisirs",
+    },
+    {
+      param: "/region",
+      icon: "binoculars",
+      txt: "La région",
+      subtxt: "Au cœur de la Vallée des Gaves",
+    },
+  ];
   return (
     <div className="home">
       {/* SECTION PRESENTATION */}
@@ -76,50 +101,11 @@ const Home = () => {
           <hr className="home__discover__title__hr" />
         </div>
         <div className="home__discover__container">
-          <NavLink to="/pitches">
-            <div className="home__discover__container__card">
-              <FaTree className="home__discover__container__card__logo" />
-              <h2 className="home__discover__container__card__txt">
-                Les emplacements et locations
-              </h2>
-              <h3 className="home__discover__container__card__subtxt">
-                Calmes et ombragés
-              </h3>
-            </div>
-          </NavLink>
-          <NavLink to="/services">
-            <div className="home__discover__container__card">
-              <FaShower className="home__discover__container__card__logo" />
-              <h2 className="home__discover__container__card__txt">
-                Les services
-              </h2>
-              <h3 className="home__discover__container__card__subtxt">
-                Pour votre confort
-              </h3>
-            </div>
-          </NavLink>
-          <NavLink to="/activities">
-            <div className="home__discover__container__card">
-              <FaTrophy className="home__discover__container__card__logo" />
-              <h2 className="home__discover__container__card__txt">
-                Les activités
-              </h2>
-              <h3 className="home__discover__container__card__subtxt">
-                Nature & Loisirs
-              </h3>
-            </div>
-          </NavLink>
-          <NavLink to="/region">
-            <div className="home__discover__container__card">
-              <FaBinoculars className="home__discover__container__card__logo" />
-              <h2 className="home__discover__container__card__txt">
-                La région
-              </h2>
-              <h3 className="home__discover__container__card__subtxt">
-                Au cœur de la Vallée des Gaves
-              </h3>
-            </div>
-          </NavLink>
+          {/* MAP OF COMPONENT CARD */}
+          {cards &&
+            cards.map((card, index) => {
+              return <Card key={index} {...card} />;
+            })}
         </div>
         <div className="home__discover__desc">
           <hr className="home__discover__desc__hr" />

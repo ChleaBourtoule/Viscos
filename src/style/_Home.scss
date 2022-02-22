@@ -205,35 +205,6 @@
       justify-content: space-around;
       align-items: center;
       margin-bottom: 4vh;
-      &__card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        width: 20vw;
-        &__logo {
-          font-size: 4vw;
-          color: $Dark-Green;
-          margin-bottom: 3vh;
-        }
-        &__txt {
-          color: $Dark-Green;
-          font-size: 3vh;
-          font-weight: 600;
-          margin-bottom: 2vh;
-        }
-        &__subtxt {
-          color: $Light-Green;
-          font-size: 2vh;
-          font-weight: 400;
-        }
-      }
-      &__card:hover {
-        > h2 {
-          color: $Coral;
-        }
-      }
     }
     &__desc {
       display: flex;
