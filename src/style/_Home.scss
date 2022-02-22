@@ -1,7 +1,8 @@
 .home {
   background-image: url(../assets/header_2304.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-attachment: fixed;
   &__presentation {
     height: 90vh;
     display: flex;
