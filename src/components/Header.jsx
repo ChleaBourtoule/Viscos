@@ -3,12 +3,38 @@ import Flags from "country-flag-icons/react/3x2";
 import { GoTriangleUp } from "react-icons/go";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/favicon.png";
-import { useState } from "react";
 
-const Header = () => {
-  const [chosenUk, setChosenUk] = useState(false);
-  const [chosenNl, setChosenNl] = useState(false);
-  const [chosenFr, setChosenFr] = useState(true);
+const Header = ({ language, setLanguage }) => {
+  const pitch = {
+    fr: `EMPLACEMENTS`,
+    en: `PITCHES`,
+    nl: `STAANPLAATSEN`,
+  };
+  const services = {
+    fr: `SERVICES`,
+    en: `SERVICES`,
+    nl: `VOORZIENINGEN BIJ DE CAMPING`,
+  };
+  const activities = {
+    fr: `ACTIVITÉS`,
+    en: `ACTIVITIES`,
+    nl: `VRIJETIJDSBESTEDING`,
+  };
+  const prices = {
+    fr: `TARIFS`,
+    en: `PRICES`,
+    nl: `TARIEVEN`,
+  };
+  const booking = {
+    fr: `RÉSERVER`,
+    en: `BOOKING`,
+    nl: `RESERVERINGEN`,
+  };
+  const region = {
+    fr: `RÉGION`,
+    en: `REGION`,
+    nl: `DE REGIO`,
+  };
   return (
     <div className="header">
       <div className="header__logo">
@@ -19,35 +45,35 @@ const Header = () => {
       <div className="header__links">
         <ul className="header__links__list">
           <NavLink to="/pitches">
-            <li className="header__links__list__link">EMPLACEMENTS</li>
+            <li className="header__links__list__link">{pitch[language]}</li>
           </NavLink>
           <NavLink to="/services">
-            <li className="header__links__list__link">SERVICES</li>
+            <li className="header__links__list__link">{services[language]}</li>
           </NavLink>
           <NavLink to="/activities">
-            <li className="header__links__list__link">ACTIVITÉS</li>
+            <li className="header__links__list__link">
+              {activities[language]}
+            </li>
           </NavLink>
           <NavLink to="/prices">
-            <li className="header__links__list__link">TARIFS</li>
+            <li className="header__links__list__link">{prices[language]}</li>
           </NavLink>
           <NavLink to="/booking">
-            <li className="header__links__list__link">RÉSERVER</li>
+            <li className="header__links__list__link">{booking[language]}</li>
           </NavLink>
           <NavLink to="/region">
-            <li className="header__links__list__link">RÉGION</li>
+            <li className="header__links__list__link">{region[language]}</li>
           </NavLink>
         </ul>
         <div className="header__links__flags">
           <div className="header__links__flags__container">
             <Flags.FR
               className="header__links__flags__container__fr"
-              onClick={() => {
-                setChosenFr(true), setChosenNl(false), setChosenUk(false);
-              }}
+              onClick={() => setLanguage("fr")}
             />
             <GoTriangleUp
               className={
-                chosenFr
+                language === "fr"
                   ? "header__links__flags__container__triangle"
                   : "hidden"
               }
@@ -56,13 +82,11 @@ const Header = () => {
           <div className="header__links__flags__container">
             <Flags.GB
               className="header__links__flags__container__uk"
-              onClick={() => {
-                setChosenFr(false), setChosenNl(false), setChosenUk(true);
-              }}
+              onClick={() => setLanguage("en")}
             />
             <GoTriangleUp
               className={
-                chosenUk
+                language === "en"
                   ? "header__links__flags__container__triangle"
                   : "hidden"
               }
@@ -71,13 +95,11 @@ const Header = () => {
           <div className="header__links__flags__container">
             <Flags.NL
               className="header__links__flags__container__nl"
-              onClick={() => {
-                setChosenFr(false), setChosenNl(true), setChosenUk(false);
-              }}
+              onClick={() => setLanguage("nl")}
             />
             <GoTriangleUp
               className={
-                chosenNl
+                language === "nl"
                   ? "header__links__flags__container__triangle"
                   : "hidden"
               }

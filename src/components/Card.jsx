@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaTree, FaShower, FaTrophy, FaBinoculars } from "react-icons/fa";
+import { FaTree, FaShower, FaHiking, FaMap } from "react-icons/fa";
 
 const Card = ({ param, txt, subtxt, icon }) => {
   return (
@@ -10,10 +10,10 @@ const Card = ({ param, txt, subtxt, icon }) => {
           <FaTree className="card__logo" />
         ) : icon === "shower" ? (
           <FaShower className="card__logo" />
-        ) : icon === "trophy" ? (
-          <FaTrophy className="card__logo" />
-        ) : icon === "binoculars" ? (
-          <FaBinoculars className="card__logo" />
+        ) : icon === "hiking" ? (
+          <FaHiking className="card__logo" />
+        ) : icon === "map" ? (
+          <FaMap className="card__logo" />
         ) : (
           ""
         )}
