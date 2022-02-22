@@ -1,7 +1,7 @@
 .home {
   background-image: url(../assets/header_2304.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   &__presentation {
     height: 100vh;
@@ -34,7 +34,7 @@
       background-color: $Coral;
       border-radius: 10px;
       border: none;
-      width: 10%;
+      width: 5vw;
     }
     &__text {
       margin-top: 8vh;
@@ -100,7 +100,7 @@
           background-color: $Light-Green;
           border-radius: 10px;
           border: none;
-          width: 20%;
+          width: 5vw;
           margin-top: 4vh;
           margin-bottom: 4vh;
         }
@@ -196,7 +196,7 @@
         background-color: $Coral;
         border-radius: 10px;
         border: none;
-        width: 30%;
+        width: 5vw;
         margin-top: 8vh;
         margin-bottom: 8vh;
       }
@@ -219,7 +219,7 @@
         background-color: $Coral;
         border-radius: 10px;
         border: none;
-        width: 25%;
+        width: 5vw;
         margin-top: 3vh;
         margin-bottom: 3vh;
       }
