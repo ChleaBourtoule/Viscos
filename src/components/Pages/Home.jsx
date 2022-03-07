@@ -180,7 +180,7 @@ const Home = ({ lang }) => {
             </h4>
           </div>
           <button className="home__banner__curist__button">
-            {curistsBtn[lang]}
+            <a href="prices#cure">{curistsBtn[lang]}</a>
           </button>
         </div>
         <div className="home__banner__pitch">
@@ -191,7 +191,7 @@ const Home = ({ lang }) => {
             <hr className="home__banner__pitch__title__hr" />
           </div>
           <button className="home__banner__pitch__button">
-            {priceBtn[lang]}
+            <a href="prices">{priceBtn[lang]}</a>
           </button>
         </div>
       </div>

@@ -165,7 +165,7 @@ const Prices = ({ lang }) => {
         <div className="prices__mobilhomes__rental">
           <Rental lang={lang} />
         </div>
-        <div className="prices__mobilhomes__curist">
+        <div id="cure" className="prices__mobilhomes__curist">
           <Curist lang={lang} />
         </div>
         <div className="prices__mobilhomes__tax">
