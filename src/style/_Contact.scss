@@ -1,67 +1,76 @@
 .contact {
-  width: 50vw;
-  &__squirrel {
-    width: 23vw;
-  }
-  &__title {
-    margin-top: 6vh;
-    font-size: 4vh;
-    color: $Light-Grey;
-  }
-  &__hr {
-    height: 0.5vh;
-    color: $Coral;
-    background-color: $Coral;
-    border-radius: 10px;
-    border: none;
-    width: 3vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
-  &__text {
-    font-size: 2vh;
-    color: $Light-Grey;
-  }
-  &__ways {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 4vh;
-    &__phone {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 30%;
-      &__icon {
-        font-size: 2vw;
-        color: $Dark-Green;
-      }
-      &__nb {
-        margin-top: 3vh;
-        font-size: 2vh;
-        color: $Coral;
-      }
+  background-color: $Light-Green;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px black;
+  &__div {
+    width: 50vw;
+    &__squirrel {
+      width: 23vw;
     }
-    &__email {
+    &__title {
+      margin-top: 6vh;
+      font-size: 4vh;
+      color: $Light-Grey;
+    }
+    &__hr {
+      height: 0.5vh;
+      color: $Coral;
+      background-color: $Coral;
+      border-radius: 10px;
+      border: none;
+      width: 3vw;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+    }
+    &__text {
+      font-size: 2vh;
+      color: $Light-Grey;
+    }
+    &__ways {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 30%;
-      &__icon {
-        font-size: 2vw;
-        color: $Dark-Green;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 4vh;
+      &__phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        &__icon {
+          font-size: 2vw;
+          color: $Dark-Green;
+        }
+        &__nb {
+          margin-top: 3vh;
+          font-size: 2vh;
+          color: $Coral;
+        }
       }
-      &__address {
-        margin-top: 3vh;
-        font-size: 2vh;
-        color: $Coral;
-        cursor: pointer;
-      }
-      &__address:hover {
-        text-decoration: underline;
+      &__email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        &__icon {
+          font-size: 2vw;
+          color: $Dark-Green;
+        }
+        &__address {
+          margin-top: 3vh;
+          font-size: 2vh;
+          color: $Coral;
+          cursor: pointer;
+        }
+        &__address:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

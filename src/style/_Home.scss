@@ -52,20 +52,12 @@
         color: $Light-Grey;
       }
     }
-    &__button {
+    &__chevron {
       margin-top: 4vh;
       padding: 1.5vw;
-      border-radius: 30px;
-      border: none;
-      background-color: $Coral;
-      color: $Light-Grey;
-      font-size: 2vh;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    &__button:hover {
-      background-color: $Light-Grey;
       color: $Coral;
+      font-size: 8vw;
+      animation: pulse 3s infinite;
     }
   }
   &__banner {
@@ -230,13 +222,19 @@
       }
     }
   }
-  &__contact {
-    background-color: $Light-Green;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 30px black;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.75);
+    opacity: 0.25;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }

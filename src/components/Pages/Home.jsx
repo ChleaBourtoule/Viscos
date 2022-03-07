@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "../Card";
-import Contact from "../Contact";
 
 import { AiFillStar } from "react-icons/ai";
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 
 const Home = ({ lang }) => {
   const summary = {
@@ -17,11 +17,6 @@ const Home = ({ lang }) => {
     fr: `Dates d'ouverture : du 4/06/2022 au 1/10/2022`,
     en: `Opening: 6/4/2022 — 10/1/2022`,
     nl: `Opening: 6/4/2022 — 10/1/2022`,
-  };
-  const buttonPrez = {
-    fr: `EN SAVOIR PLUS`,
-    en: `FIND OUT MORE!`,
-    nl: `MEER INFORMATIE`,
   };
   const curistsTitle = {
     fr: `Offre spéciale curistes`,
@@ -166,14 +161,12 @@ const Home = ({ lang }) => {
         <div className="home__presentation__dates">
           <h4 className="home__presentation__dates__txt">{dates[lang]}</h4>
         </div>
-        <button className="home__presentation__button">
-          {buttonPrez[lang]}
-        </button>
+        <HiOutlineChevronDoubleDown className="home__presentation__chevron" />
       </div>
 
       {/* SECTION BANNER */}
 
-      <div className="home__banner">
+      <div className="home__banner" id="banner">
         <div className="home__banner__curist">
           <div className="home__banner__curist__title">
             <h2 className="home__banner__curist__title__txt">
@@ -232,9 +225,6 @@ const Home = ({ lang }) => {
             {bike.second[lang]}
           </h3>
         </div>
-      </div>
-      <div className="home__contact">
-        <Contact lang={lang} />
       </div>
     </div>
   );

@@ -1,17 +1,145 @@
 .pitches {
-  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: $Coral;
-  &__title {
-    color: $Dark-Green;
+  background-color: $Light-Grey;
+  &__carousel {
+    box-shadow: 0 0 30px black;
+    &__img {
+      height: 100%;
+    }
   }
-  &__subtitle {
-    color: $Light-Grey;
-    background-color: $Light-Green;
-    border-radius: 20px;
-    padding: 1vh 2vw;
+  &__container {
+    height: fit-content;
+    &__title {
+      margin-top: 12vh;
+      font-size: 5vh;
+      font-weight: 700;
+      color: $Dark-Green;
+    }
+    &__hr {
+      height: 0.5vh;
+      color: $Coral;
+      background-color: $Coral;
+      border-radius: 10px;
+      border: none;
+      width: 5vw;
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+    }
+    &__content {
+      margin-top: 15vh;
+
+      &__firsttext {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15vh;
+        animation-name: appear;
+        animation-duration: 4s;
+        &__txt {
+          width: 40vw;
+          text-align: center;
+          color: $Dark-Green;
+          font-size: 2vh;
+          font-weight: 400;
+        }
+        &__icon {
+          font-size: 3vw;
+          width: 40vw;
+          color: $Dark-Green;
+        }
+        &__icon:hover {
+          color: $Coral;
+        }
+      }
+      &__secondtext {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15vh;
+        animation-name: appear;
+        animation-duration: 4s;
+        &__txt {
+          width: 40vw;
+          text-align: center;
+          color: $Dark-Green;
+          font-size: 2vh;
+          font-weight: 400;
+        }
+        &__icon {
+          font-size: 4vw;
+          width: 40vw;
+          color: $Dark-Green;
+        }
+        &__icon:hover {
+          color: $Coral;
+        }
+      }
+      &__thirdtext {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15vh;
+        animation-name: appear;
+        animation-duration: 4s;
+        &__txt {
+          width: 40vw;
+          text-align: center;
+          color: $Dark-Green;
+          font-size: 2vh;
+          font-weight: 400;
+        }
+        &__icon {
+          font-size: 4vw;
+          width: 40vw;
+          color: $Dark-Green;
+        }
+        &__icon:hover {
+          color: $Coral;
+        }
+      }
+      &__fourthtext {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20vh;
+        animation-name: appear;
+        animation-duration: 4s;
+        &__txt {
+          width: 40vw;
+          text-align: center;
+          color: $Dark-Green;
+          font-size: 2vh;
+          font-weight: 400;
+        }
+        &__icon {
+          font-size: 4vw;
+          width: 40vw;
+          color: $Dark-Green;
+        }
+        &__icon:hover {
+          color: $Coral;
+        }
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
