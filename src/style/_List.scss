@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
+  &__logo {
+    font-size: 3vw;
+    margin-bottom: 4vh;
+    color: $Dark-Green;
+  }
+  &__p {
+    color: $Dark-Green;
+    font-size: 2vh;
+    font-weight: 400;
+    margin-bottom: 10vh;
+  }
+}
+
+.new {
+  color: $Coral;
+}

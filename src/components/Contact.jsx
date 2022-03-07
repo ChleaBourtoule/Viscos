@@ -11,22 +11,24 @@ const Contact = ({ lang }) => {
   };
   return (
     <div className="contact">
-      <img className="contact__squirrel" src={squirrel} alt="squirrel" />
-      <h1 className="contact__title">Contact</h1>
-      <hr className="contact__hr" />
-      <h4 className="contact__text">{text[lang]}</h4>
-      <div className="contact__ways">
-        <div className="contact__ways__phone">
-          <FaPhoneAlt className="contact__ways__phone__icon" />
-          <h4 className="contact__ways__phone__nb">05 62 97 05 45</h4>
-        </div>
-        <div className="contact__ways__email">
-          <GrMail className="contact__ways__email__icon" />
-          <h4 className="contact__ways__email__address">
-            <a href="mailto:fr.domaine.viscos.co@gmail.com">
-              fr.domaine.viscos.co@gmail.com
-            </a>
-          </h4>
+      <div className="contact__div">
+        <img className="contact__div__squirrel" src={squirrel} alt="squirrel" />
+        <h1 className="contact__div__title">Contact</h1>
+        <hr className="contact__div__hr" />
+        <h4 className="contact__div__text">{text[lang]}</h4>
+        <div className="contact__div__ways">
+          <div className="contact__div__ways__phone">
+            <FaPhoneAlt className="contact__div__ways__phone__icon" />
+            <h4 className="contact__div__ways__phone__nb">05 62 97 05 45</h4>
+          </div>
+          <div className="contact__div__ways__email">
+            <GrMail className="contact__div__ways__email__icon" />
+            <h4 className="contact__div__ways__email__address">
+              <a href="mailto:fr.domaine.viscos.co@gmail.com">
+                fr.domaine.viscos.co@gmail.com
+              </a>
+            </h4>
+          </div>
         </div>
       </div>
     </div>
