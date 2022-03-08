@@ -1,4 +1,5 @@
 import React from "react";
+import { IoDocumentTextSharp } from "react-icons/io5";
 
 const Booking = ({ lang }) => {
   const title = {
@@ -159,8 +160,14 @@ const Booking = ({ lang }) => {
       <hr className="booking__hr" />
       <div className="booking__download">
         <h3 className="booking__download__title">{download[lang]}</h3>
-        <p className="booking__download__mobilhomes">{linkMH[lang]}</p>
-        <p className="booking__download__camping">{linkC[lang]}</p>
+        <div className="booking__download__div">
+          <p className="booking__download__div__mobilhomes">{linkMH[lang]}</p>
+          <IoDocumentTextSharp className="booking__download__div__icon" />
+        </div>
+        <div className="booking__download__div">
+          <p className="booking__download__div__camping">{linkC[lang]}</p>
+          <IoDocumentTextSharp className="booking__download__div__icon" />
+        </div>
       </div>
       <h3 className="booking__formtitle">{titleForm[lang]}</h3>
       <div className="booking__content">

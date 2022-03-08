@@ -33,15 +33,24 @@
       font-weight: 700;
       color: $Dark-Green;
     }
-    > p {
-      margin-top: 2vh;
-      font-size: 2vh;
-      font-weight: 500;
-      color: $Coral;
-    }
-    > p:hover {
-      text-decoration: underline;
-      cursor: pointer;
+    &__div {
+      display: flex;
+      flex-direction: row;
+      > p {
+        margin-top: 2vh;
+        font-size: 2vh;
+        font-weight: 500;
+        color: $Coral;
+      }
+      > p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      &__icon {
+        font-size: 2vw;
+        margin-left: 2vw;
+        color: $Dark-Green;
+      }
     }
   }
   &__formtitle {
