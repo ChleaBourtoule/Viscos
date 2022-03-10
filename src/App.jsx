@@ -25,7 +25,7 @@ function App() {
           <Route path="/activities" element={<Activities lang={language} />} />
           <Route path="/prices" element={<Prices lang={language} />} />
           <Route path="/booking" element={<Booking lang={language} />} />
-          <Route path="/region" element={<Region />} />
+          <Route path="/region" element={<Region lang={language} />} />
         </Routes>
         <Contact lang={language} />
       </Router>
