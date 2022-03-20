@@ -28,6 +28,9 @@
           font-size: 3vw;
           color: $Light-Grey;
           margin: 4vh 1vw 4vh 1vw;
+          @media only screen and (max-width: $Medium) {
+            font-size: 5vh;
+          }
         }
       }
     }
