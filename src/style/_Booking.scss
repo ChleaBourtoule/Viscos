@@ -39,6 +39,8 @@
     &__div {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
       > p {
         margin-top: 2vh;
         font-size: 2vh;
@@ -53,6 +55,18 @@
         font-size: 2vw;
         margin-left: 2vw;
         color: $Dark-Green;
+        @media only screen and (max-width: $Large) {
+          font-size: 3vw;
+        }
+        @media only screen and (max-width: $Medium) {
+          font-size: 3.5vw;
+        }
+        @media only screen and (max-width: $Small) {
+          font-size: 4vw;
+        }
+        @media only screen and (max-width: $XSmall) {
+          font-size: 5vw;
+        }
       }
     }
   }
