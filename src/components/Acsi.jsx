@@ -24,7 +24,7 @@ const Acsi = ({ lang }) => {
         <caption>{acsi.title[lang]}</caption>
         <tr>
           <td>{acsi.row1[lang]}</td>
-          <td>{acsi.row2[lang]}</td>
+          <td className="price">{acsi.row2[lang]}</td>
         </tr>
       </table>
     </div>

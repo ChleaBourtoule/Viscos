@@ -4,10 +4,25 @@
   width: 20vw;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: $Large) {
+    width: 40vw;
+  }
+  @media only screen and (max-width: $Medium) {
+    width: 60vw;
+  }
   &__logo {
     font-size: 3vw;
     margin-bottom: 4vh;
     color: $Dark-Green;
+    @media only screen and (max-width: $Large) {
+      font-size: 5vw;
+    }
+    @media only screen and (max-width: $Medium) {
+      font-size: 7vw;
+    }
+    @media only screen and (max-width: $Small) {
+      font-size: 8vw;
+    }
   }
   &__p {
     color: $Dark-Green;

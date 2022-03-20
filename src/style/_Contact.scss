@@ -7,7 +7,11 @@
   align-items: center;
   box-shadow: 0 0 30px black;
   &__div {
-    width: 50vw;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__squirrel {
       width: 23vw;
     }
@@ -25,10 +29,14 @@
       width: 3vw;
       margin-top: 2vh;
       margin-bottom: 2vh;
+      @media only screen and (max-width: $Small) {
+        width: 10vw;
+      }
     }
     &__text {
       font-size: 2vh;
       color: $Light-Grey;
+      text-align: center;
     }
     &__ways {
       display: flex;
@@ -36,15 +44,27 @@
       justify-content: space-around;
       width: 100%;
       margin-top: 4vh;
+      @media only screen and (max-width: $Small) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       &__phone {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 30%;
+        @media only screen and (max-width: $Small) {
+          margin-bottom: 3vh;
+          width: 50%;
+        }
         &__icon {
           font-size: 2vw;
           color: $Dark-Green;
+          @media only screen and (max-width: $Medium) {
+            font-size: 4vw;
+          }
         }
         &__nb {
           margin-top: 3vh;
@@ -58,9 +78,15 @@
         justify-content: center;
         align-items: center;
         width: 30%;
+        @media only screen and (max-width: $Small) {
+          width: 50%;
+        }
         &__icon {
           font-size: 2vw;
           color: $Dark-Green;
+          @media only screen and (max-width: $Medium) {
+            font-size: 4vw;
+          }
         }
         &__address {
           margin-top: 3vh;

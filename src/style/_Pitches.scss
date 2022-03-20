@@ -27,30 +27,55 @@
       width: 5vw;
       margin-top: 10vh;
       margin-bottom: 5vh;
+      @media only screen and (max-width: $Small) {
+        width: 10vw;
+      }
     }
     &__content {
       margin-top: 15vh;
-
+      @media only screen and (max-width: $Medium) {
+        margin-top: 5vh;
+      }
       &__firsttext {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
-        margin-bottom: 15vh;
         animation-name: appear;
         animation-duration: 4s;
+        @media only screen and (max-width: $Medium) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         &__txt {
           width: 40vw;
           text-align: center;
           color: $Dark-Green;
           font-size: 2vh;
           font-weight: 400;
+          background-color: $Coral;
+          padding: 5vh;
+          margin-bottom: 5vh;
+          margin-left: 3vw;
+          border-radius: 10px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.459);
+          @media only screen and (max-width: $Medium) {
+            width: 70vw;
+          }
         }
         &__icon {
           font-size: 3vw;
           width: 40vw;
           color: $Dark-Green;
+          @media only screen and (max-width: $Medium) {
+            margin: 10vh 0;
+            font-size: 6vw;
+          }
+          @media only screen and (max-width: $Medium) {
+            font-size: 8vw;
+          }
         }
         &__icon:hover {
           color: $Coral;
@@ -62,20 +87,40 @@
         flex-direction: row-reverse;
         justify-content: space-around;
         align-items: center;
-        margin-bottom: 15vh;
         animation-name: appear;
         animation-duration: 4s;
+        @media only screen and (max-width: $Medium) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         &__txt {
           width: 40vw;
           text-align: center;
           color: $Dark-Green;
           font-size: 2vh;
           font-weight: 400;
+          background-color: $Coral;
+          padding: 5vh;
+          margin-bottom: 5vh;
+          margin-right: 3vw;
+          border-radius: 10px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.459);
+          @media only screen and (max-width: $Medium) {
+            width: 70vw;
+          }
         }
         &__icon {
           font-size: 4vw;
           width: 40vw;
           color: $Dark-Green;
+          @media only screen and (max-width: $Medium) {
+            margin: 10vh 0;
+            font-size: 8vw;
+          }
+          @media only screen and (max-width: $Medium) {
+            font-size: 10vw;
+          }
         }
         &__icon:hover {
           color: $Coral;
@@ -87,20 +132,40 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin-bottom: 15vh;
         animation-name: appear;
         animation-duration: 4s;
+        @media only screen and (max-width: $Medium) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         &__txt {
           width: 40vw;
           text-align: center;
           color: $Dark-Green;
           font-size: 2vh;
           font-weight: 400;
+          background-color: $Coral;
+          padding: 5vh;
+          margin-bottom: 5vh;
+          margin-left: 3vw;
+          border-radius: 10px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.459);
+          @media only screen and (max-width: $Medium) {
+            width: 70vw;
+          }
         }
         &__icon {
           font-size: 4vw;
           width: 40vw;
           color: $Dark-Green;
+          @media only screen and (max-width: $Medium) {
+            margin: 10vh 0;
+            font-size: 6vw;
+          }
+          @media only screen and (max-width: $Medium) {
+            font-size: 8vw;
+          }
         }
         &__icon:hover {
           color: $Coral;
@@ -112,20 +177,41 @@
         flex-direction: row-reverse;
         justify-content: space-around;
         align-items: center;
-        margin-bottom: 20vh;
         animation-name: appear;
         animation-duration: 4s;
+        margin-bottom: 10vh;
+        @media only screen and (max-width: $Medium) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         &__txt {
           width: 40vw;
           text-align: center;
           color: $Dark-Green;
           font-size: 2vh;
           font-weight: 400;
+          background-color: $Coral;
+          padding: 5vh;
+          margin-bottom: 5vh;
+          margin-right: 3vw;
+          border-radius: 10px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.459);
+          @media only screen and (max-width: $Medium) {
+            width: 70vw;
+          }
         }
         &__icon {
           font-size: 4vw;
           width: 40vw;
           color: $Dark-Green;
+          @media only screen and (max-width: $Medium) {
+            margin: 10vh 0;
+            font-size: 6vw;
+          }
+          @media only screen and (max-width: $Medium) {
+            font-size: 8vw;
+          }
         }
         &__icon:hover {
           color: $Coral;
