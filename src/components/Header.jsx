@@ -182,7 +182,9 @@ const Header = ({ language, setLanguage }) => {
           <div className="header__linksburger__flags__container">
             <Flags.FR
               className="header__linksburger__flags__container__fr"
-              onClick={() => setLanguage("fr")}
+              onClick={() => {
+                setLanguage("fr"), setBurger(false);
+              }}
             />
             <GoTriangleUp
               className={
@@ -195,7 +197,9 @@ const Header = ({ language, setLanguage }) => {
           <div className="header__linksburger__flags__container">
             <Flags.GB
               className="header__linksburger__flags__container__uk"
-              onClick={() => setLanguage("en")}
+              onClick={() => {
+                setLanguage("en"), setBurger(false);
+              }}
             />
             <GoTriangleUp
               className={
@@ -208,7 +212,9 @@ const Header = ({ language, setLanguage }) => {
           <div className="header__linksburger__flags__container">
             <Flags.NL
               className="header__linksburger__flags__container__nl"
-              onClick={() => setLanguage("nl")}
+              onClick={() => {
+                setLanguage("nl"), setBurger(false);
+              }}
             />
             <GoTriangleUp
               className={
