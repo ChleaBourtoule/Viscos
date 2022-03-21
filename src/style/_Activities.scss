@@ -43,6 +43,9 @@
         &__logo {
           font-size: 30px;
           width: 25%;
+          @media only screen and (max-width: $Large) {
+            margin-top: 5vh;
+          }
         }
         &__p {
           width: 75%;
