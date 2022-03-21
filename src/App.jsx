@@ -1,7 +1,7 @@
 import "./App.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
-
+import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Home from "./components/Pages/Home";
 import Pitches from "./components/Pages/Pitches";
@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Header language={language} setLanguage={setLanguage} />
         <Routes>
           <Route path="/" element={<Home lang={language} />} />
