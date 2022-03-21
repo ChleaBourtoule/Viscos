@@ -1,0 +1,34 @@
+.rental {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  table {
+    width: 80%;
+    box-shadow: 0 0 20px black;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid $Dark-Green;
+    border-collapse: collapse;
+    padding: 2vh 2vw;
+    color: $Dark-Green;
+    font-size: 2.5vh;
+  }
+
+  caption {
+    border-top: 1px solid $Dark-Green;
+    border-left: 1px solid $Dark-Green;
+    border-right: 1px solid $Dark-Green;
+    padding: 2vh 0;
+    background-color: $Coral;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 20px black;
+    color: $Dark-Green;
+    font-size: 3.5vh;
+  }
+}

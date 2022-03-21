@@ -1,0 +1,214 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $Light-Grey;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0 30px black;
+  height: 7vh;
+  @media only screen and (max-width: $XLarge) {
+    flex-direction: column;
+  }
+  &__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (max-width: $XLarge) {
+      width: 100%;
+    }
+    &__logo {
+      margin-left: 4vw;
+      &__svg {
+        width: 50px;
+        cursor: pointer;
+      }
+      &__title:hover {
+        color: $Coral;
+      }
+    }
+    &__burger {
+      display: none;
+      @media only screen and (max-width: $XLarge) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 3vw;
+      }
+      &__logo {
+        height: 30px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin-right: 2vw;
+    @media only screen and (max-width: $XLarge) {
+      display: none;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 85%;
+      &__link {
+        cursor: pointer;
+        color: $Dark-Green;
+        font-family: $Main-font;
+        font-weight: 600;
+      }
+      &__link:hover {
+        color: $Coral;
+      }
+    }
+    &__flags {
+      display: flex;
+      justify-content: space-around;
+      width: 15%;
+      &__container {
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__triangle {
+          color: $Coral;
+        }
+        &__uk {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+        }
+        &__uk:hover {
+          transform: scale(1.2);
+        }
+        &__fr {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+        }
+        &__fr:hover {
+          transform: scale(1.2);
+        }
+        &__nl {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+        }
+        &__nl:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  &__linksburger {
+    @media only screen and (max-width: $XLarge) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      width: 100%;
+      background-color: $Light-Grey;
+      color: $Dark-Green;
+      box-shadow: 0px 15px 10px -15px #111;
+    }
+    &__list {
+      margin: 2vh 0;
+      text-align: center;
+      &__link {
+        padding: 2vh 0;
+        font-size: 2.5vh;
+      }
+      &__link:hover {
+        color: $Coral;
+        text-decoration: underline;
+      }
+    }
+    &__flags {
+      display: flex;
+      justify-content: space-around;
+      width: 15%;
+      margin-bottom: 2vh;
+      @media only screen and (max-width: $Small) {
+        width: 30%;
+      }
+      &__container {
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__triangle {
+          color: $Coral;
+        }
+        &__uk {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+          @media only screen and (max-width: $Large) {
+            width: 3vw;
+          }
+          @media only screen and (max-width: $Medium) {
+            width: 3.5vw;
+          }
+          @media only screen and (max-width: $Small) {
+            width: 5vw;
+          }
+        }
+        &__uk:hover {
+          transform: scale(1.2);
+        }
+        &__fr {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+          @media only screen and (max-width: $Large) {
+            width: 3vw;
+          }
+          @media only screen and (max-width: $Medium) {
+            width: 3.5vw;
+          }
+          @media only screen and (max-width: $Small) {
+            width: 5vw;
+          }
+        }
+        &__fr:hover {
+          transform: scale(1.2);
+        }
+        &__nl {
+          width: 2vw;
+          cursor: pointer;
+          transition: transform 0.3s;
+          @media only screen and (max-width: $Large) {
+            width: 3vw;
+          }
+          @media only screen and (max-width: $Medium) {
+            width: 3.5vw;
+          }
+          @media only screen and (max-width: $Small) {
+            width: 5vw;
+          }
+        }
+        &__nl:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  &__hidden {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}

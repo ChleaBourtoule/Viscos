@@ -1,0 +1,205 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $Light-Grey;
+  height: fit-content;
+  &__title {
+    margin-top: 12vh;
+    font-size: 5vh;
+    font-weight: 700;
+    color: $Dark-Green;
+  }
+  &__hr {
+    height: 0.5vh;
+    color: $Coral;
+    background-color: $Coral;
+    border-radius: 10px;
+    border: none;
+    width: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    @media only screen and (max-width: $Small) {
+      width: 10vw;
+    }
+  }
+  &__download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &__title {
+      margin-top: 1vh;
+      font-size: 3vh;
+      font-weight: 700;
+      color: $Dark-Green;
+    }
+    &__div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      > p {
+        margin-top: 2vh;
+        font-size: 2vh;
+        font-weight: 500;
+        color: $Coral;
+      }
+      > p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      &__icon {
+        font-size: 2vw;
+        margin-left: 2vw;
+        color: $Dark-Green;
+        @media only screen and (max-width: $Large) {
+          font-size: 3vw;
+        }
+        @media only screen and (max-width: $Medium) {
+          font-size: 3.5vw;
+        }
+        @media only screen and (max-width: $Small) {
+          font-size: 4vw;
+        }
+        @media only screen and (max-width: $XSmall) {
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+  &__formtitle {
+    margin-top: 10vh;
+    font-size: 3vh;
+    font-weight: 700;
+    color: $Dark-Green;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    &__form {
+      margin-top: 5vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        margin: 2vh 0;
+        color: $Dark-Green;
+
+        label {
+          font-size: 2.3vh;
+          font-weight: 700;
+          margin-bottom: 1vh;
+        }
+        input {
+          width: 44vw;
+          padding: 0 2vw;
+          height: 5vh;
+          border: 1px solid $Dark-Green;
+          border-radius: 10px;
+          color: $Dark-Green;
+          @media only screen and (max-width: $Large) {
+            width: 60vw;
+          }
+        }
+        select {
+          width: 10vw;
+          height: 4vh;
+          border: 1px solid $Dark-Green;
+          background-color: white;
+          border-radius: 10px;
+          @media only screen and (max-width: $Large) {
+            width: 60vw;
+          }
+        }
+        textarea {
+          width: 44vw;
+          height: 30vh;
+          padding: 2vh;
+          border: 1px solid $Dark-Green;
+          border-radius: 10px;
+          @media only screen and (max-width: $Large) {
+            width: 60vw;
+          }
+        }
+      }
+      &__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 44vw;
+        justify-content: space-between;
+        align-items: center;
+        @media only screen and (max-width: $Large) {
+          width: 60vw;
+        }
+        &__div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 2vh 0;
+          color: $Dark-Green;
+          label {
+            font-size: 2.3vh;
+            font-weight: 700;
+            margin-bottom: 1vh;
+          }
+          input {
+            width: 20vw;
+            height: 5vh;
+            border: 1px solid $Dark-Green;
+            border-radius: 10px;
+            color: $Dark-Green;
+            @media only screen and (max-width: $Large) {
+              width: 28vw;
+            }
+            @media only screen and (max-width: $Small) {
+              width: 60vw;
+            }
+          }
+          select {
+            width: 20vw;
+            height: 4vh;
+            border: 1px solid $Dark-Green;
+            background-color: white;
+            border-radius: 10px;
+            @media only screen and (max-width: $Large) {
+              width: 28vw;
+            }
+            @media only screen and (max-width: $Small) {
+              width: 60vw;
+            }
+          }
+        }
+      }
+      &__btn {
+        margin-top: 4vh;
+        margin-bottom: 10vh;
+        padding: 1.5vw;
+        border-radius: 30px;
+        border: none;
+        background-color: $Light-Green;
+        color: $Light-Grey;
+        font-size: 2vh;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      &__btn:hover {
+        background-color: $Coral;
+        color: $Light-Grey;
+      }
+    }
+  }
+}
