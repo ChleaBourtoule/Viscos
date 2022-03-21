@@ -85,14 +85,20 @@ const Activities = ({ lang }) => {
         <h2 className="activities__container__title">{title[lang]}</h2>
         <hr className="activities__container__hr" />
         <div className="activities__container__paragraph">
-          <p className="activities__container__paragraph__p">
-            <FaSwimmingPool className="activities__container__paragraph__logo" />{" "}
-            {firstParagraph[lang]}
-          </p>
-          <p className="activities__container__paragraph__p">
-            <FaVolleyballBall className="activities__container__paragraph__logo" />{" "}
-            {secondParagraph[lang]}
-          </p>
+          <div className="activities__container__paragraph__div">
+            <FaSwimmingPool className="activities__container__paragraph__div__logo" />
+            <p className="activities__container__paragraph__div__p">
+              {firstParagraph[lang]}
+            </p>
+          </div>
+
+          <div className="activities__container__paragraph__div">
+            <FaVolleyballBall className="activities__container__paragraph__div__logo" />{" "}
+            <p className="activities__container__paragraph__div__p">
+              {secondParagraph[lang]}
+            </p>
+          </div>
+
           <p className="activities__container__paragraph__p">
             {thirdParagraph[lang]}
           </p>
