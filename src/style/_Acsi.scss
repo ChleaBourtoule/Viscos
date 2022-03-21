@@ -17,6 +17,9 @@
     padding: 2vh 0;
     color: $Dark-Green;
     font-size: 2.5vh;
+    @media only screen and (max-width: $Medium) {
+      padding: 2vh 2vw;
+    }
   }
 
   caption {
@@ -31,4 +34,8 @@
     color: $Light-Grey;
     font-size: 3.5vh;
   }
+}
+
+.price {
+  width: 15vw;
 }

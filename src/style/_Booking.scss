@@ -20,6 +20,9 @@
     width: 5vw;
     margin-top: 10vh;
     margin-bottom: 5vh;
+    @media only screen and (max-width: $Small) {
+      width: 10vw;
+    }
   }
   &__download {
     display: flex;
@@ -36,6 +39,8 @@
     &__div {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
       > p {
         margin-top: 2vh;
         font-size: 2vh;
@@ -50,6 +55,18 @@
         font-size: 2vw;
         margin-left: 2vw;
         color: $Dark-Green;
+        @media only screen and (max-width: $Large) {
+          font-size: 3vw;
+        }
+        @media only screen and (max-width: $Medium) {
+          font-size: 3.5vw;
+        }
+        @media only screen and (max-width: $Small) {
+          font-size: 4vw;
+        }
+        @media only screen and (max-width: $XSmall) {
+          font-size: 5vw;
+        }
       }
     }
   }
@@ -86,12 +103,15 @@
           margin-bottom: 1vh;
         }
         input {
-          width: 35vw;
+          width: 44vw;
           padding: 0 2vw;
           height: 5vh;
           border: 1px solid $Dark-Green;
           border-radius: 10px;
           color: $Dark-Green;
+          @media only screen and (max-width: $Large) {
+            width: 60vw;
+          }
         }
         select {
           width: 10vw;
@@ -99,24 +119,34 @@
           border: 1px solid $Dark-Green;
           background-color: white;
           border-radius: 10px;
+          @media only screen and (max-width: $Large) {
+            width: 60vw;
+          }
         }
         textarea {
-          width: 60vw;
+          width: 44vw;
           height: 30vh;
           padding: 2vh;
           border: 1px solid $Dark-Green;
           border-radius: 10px;
+          @media only screen and (max-width: $Large) {
+            width: 60vw;
+          }
         }
       }
       &__container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 50%;
-        justify-content: space-around;
+        width: 44vw;
+        justify-content: space-between;
         align-items: center;
+        @media only screen and (max-width: $Large) {
+          width: 60vw;
+        }
         &__div {
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
           margin: 2vh 0;
@@ -127,20 +157,30 @@
             margin-bottom: 1vh;
           }
           input {
-            width: 10vw;
-            margin-left: 1vw;
+            width: 20vw;
             height: 5vh;
             border: 1px solid $Dark-Green;
             border-radius: 10px;
             color: $Dark-Green;
+            @media only screen and (max-width: $Large) {
+              width: 28vw;
+            }
+            @media only screen and (max-width: $Small) {
+              width: 60vw;
+            }
           }
           select {
-            margin-left: 1vw;
-            width: 10vw;
+            width: 20vw;
             height: 4vh;
             border: 1px solid $Dark-Green;
             background-color: white;
             border-radius: 10px;
+            @media only screen and (max-width: $Large) {
+              width: 28vw;
+            }
+            @media only screen and (max-width: $Small) {
+              width: 60vw;
+            }
           }
         }
       }

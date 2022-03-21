@@ -14,9 +14,9 @@ const Home = ({ lang }) => {
     nl: `De Viscos is een 2 sterrencamping, volgens de Franse normen van 2017. De camping ligt in een weelderig groene omgeving met veel verschillende bomen. Vanaf de camping heb je een prachtig uitzicht op de valei van de Gaves. De tijd lijkt hier stil te staan, het is dan ook niet moeilijk om volop te genieten en te relaxen`,
   };
   const dates = {
-    fr: `Dates d'ouverture : du 4/06/2022 au 1/10/2022`,
-    en: `Opening: 6/4/2022 — 10/1/2022`,
-    nl: `Opening: 6/4/2022 — 10/1/2022`,
+    fr: `Dates d'ouverture : du 10/06/2022 au 1/10/2022`,
+    en: `Opening: 6/10/2022 — 10/1/2022`,
+    nl: `Opening: 6/10/2022 — 10/1/2022`,
   };
   const curistsTitle = {
     fr: `Offre spéciale curistes`,

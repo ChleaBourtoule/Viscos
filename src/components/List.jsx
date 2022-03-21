@@ -27,7 +27,7 @@ const List = ({ txt, icon }) => {
       ) : icon === "wifi" ? (
         <FaWifi className="list__logo" />
       ) : icon === "wifiNew" ? (
-        <GiWifiRouter className="list__logo new" />
+        <GiWifiRouter className="list__logo" />
       ) : icon === "castle" ? (
         <GiCastle className="list__logo" />
       ) : icon === "slider" ? (
@@ -39,7 +39,7 @@ const List = ({ txt, icon }) => {
       ) : (
         ""
       )}
-      <p className={icon === "wifiNew" ? "list__p new" : "list__p"}>{txt}</p>
+      <p className="list__p">{txt}</p>
     </div>
   );
 };

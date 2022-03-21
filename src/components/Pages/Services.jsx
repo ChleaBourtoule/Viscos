@@ -53,9 +53,9 @@ const Services = ({ lang }) => {
     nl: `Een gezellige gratis wifi-ruimte`,
   };
   const wifiNew = {
-    fr: `NOUVEAUTÉ 2020: couverture intégrale du camping en wifi (gratuit)`,
-    en: `NEW IN 2020: full wifi coverage of the campsite`,
-    nl: `NIEUW IN 2020: volledige wifi-dekking van de camping`,
+    fr: `Couverture intégrale du camping en wifi (gratuit)`,
+    en: `Full wifi coverage of the campsite`,
+    nl: `Volledige wifi-dekking van de camping`,
   };
 
   const list = [

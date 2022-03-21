@@ -20,6 +20,9 @@
     width: 5vw;
     margin-top: 10vh;
     margin-bottom: 5vh;
+    @media only screen and (max-width: $Small) {
+      width: 10vw;
+    }
   }
   &__pitches {
     display: flex;
@@ -38,10 +41,14 @@
       font-size: 2vh;
       font-weight: 500;
       color: $Dark-Green;
+      @media only screen and (max-width: $Small) {
+        padding: 0 5vw;
+      }
     }
     &__plans {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-around;
       margin-top: 10vh;
     }
@@ -91,6 +98,9 @@
         font-size: 2vh;
         font-weight: 500;
         color: $Dark-Green;
+        @media only screen and (max-width: $Large) {
+          padding: 0 5vw;
+        }
       }
     }
   }

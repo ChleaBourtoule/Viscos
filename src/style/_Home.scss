@@ -17,6 +17,9 @@
       align-items: center;
       &__title {
         color: $Light-Grey;
+        @media only screen and (max-width: $Large) {
+          font-size: 5vh;
+        }
       }
       &__stars {
         display: flex;
@@ -25,6 +28,9 @@
           font-size: 3vw;
           color: $Light-Grey;
           margin: 4vh 1vw 4vh 1vw;
+          @media only screen and (max-width: $Medium) {
+            font-size: 5vh;
+          }
         }
       }
     }
@@ -35,10 +41,16 @@
       border-radius: 10px;
       border: none;
       width: 5vw;
+      @media only screen and (max-width: $Small) {
+        width: 10vw;
+      }
     }
     &__text {
       margin-top: 8vh;
       width: 40vw;
+      @media only screen and (max-width: $Large) {
+        width: 70vw;
+      }
       &__txt {
         text-align: center;
         color: $Light-Grey;
@@ -58,6 +70,9 @@
       color: $Coral;
       font-size: 8vw;
       animation: pulse 3s infinite;
+      @media only screen and (max-width: $Large) {
+        font-size: 10vw;
+      }
     }
   }
   &__banner {
@@ -81,10 +96,16 @@
       clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
       &__title {
         margin-right: 25%;
+        @media only screen and (max-width: $Medium) {
+          margin-right: 10%;
+        }
         &__txt {
           text-align: center;
           color: $Light-Grey;
           font-size: 4vh;
+          @media only screen and (max-width: $Medium) {
+            font-size: 3vh;
+          }
         }
         &__hr {
           height: 0.5vh;
@@ -95,14 +116,29 @@
           width: 5vw;
           margin-top: 4vh;
           margin-bottom: 4vh;
+          @media only screen and (max-width: $Small) {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            width: 8vw;
+          }
         }
       }
       &__text {
         width: 50%;
         margin-right: 25%;
+        @media only screen and (max-width: $Medium) {
+          width: 60%;
+          margin-right: 10%;
+        }
         &__txt {
           color: $Light-Grey;
           font-size: 1.8vh;
+          @media only screen and (max-width: $Medium) {
+            font-size: 1.5vh;
+          }
+          @media only screen and (max-width: $Small) {
+            font-size: 1.2vh;
+          }
         }
       }
       &__button {
@@ -116,6 +152,9 @@
         font-size: 2vh;
         font-weight: 600;
         cursor: pointer;
+        @media only screen and (max-width: $Medium) {
+          font-size: 1.5vh;
+        }
       }
       &__button:hover {
         background-color: $Light-Green;
@@ -138,6 +177,9 @@
         &__txt {
           color: $Light-Grey;
           font-size: 4vh;
+          @media only screen and (max-width: $Medium) {
+            font-size: 3vh;
+          }
         }
         &__hr {
           height: 0.5vh;
@@ -148,6 +190,9 @@
           width: 5vw;
           margin-top: 4vh;
           margin-bottom: 4vh;
+          @media only screen and (max-width: $Small) {
+            width: 8vw;
+          }
         }
       }
       &__button {
@@ -160,6 +205,9 @@
         font-size: 2vh;
         font-weight: 600;
         cursor: pointer;
+        @media only screen and (max-width: $Medium) {
+          font-size: 1.5vh;
+        }
       }
       &__button:hover {
         background-color: $Coral;
@@ -169,7 +217,8 @@
   }
   &__discover {
     background-color: $Light-Grey;
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,12 +240,16 @@
         width: 5vw;
         margin-top: 8vh;
         margin-bottom: 8vh;
+        @media only screen and (max-width: $Small) {
+          width: 10vw;
+        }
       }
     }
     &__container {
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-around;
+      width: 100%;
       align-items: center;
       margin-bottom: 4vh;
     }
@@ -214,11 +267,17 @@
         width: 5vw;
         margin-top: 3vh;
         margin-bottom: 3vh;
+        @media only screen and (max-width: $Small) {
+          width: 10vw;
+        }
       }
       &__txt {
         color: $Dark-Green;
         font-size: 2vh;
         font-weight: 400;
+        @media only screen and (max-width: $Small) {
+          margin: 0 3vw;
+        }
       }
     }
   }

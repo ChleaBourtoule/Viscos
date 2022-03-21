@@ -20,6 +20,9 @@
     width: 5vw;
     margin-top: 10vh;
     margin-bottom: 5vh;
+    @media only screen and (max-width: $Small) {
+      width: 10vw;
+    }
   }
   &__content {
     margin-top: 10vh;
@@ -31,17 +34,25 @@
       width: 100%;
       height: fit-content;
       margin-bottom: 10vh;
+      @media only screen and (max-width: $Large) {
+        flex-direction: column;
+      }
       &__txt {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 40vw;
+        @media only screen and (max-width: $Large) {
+          width: 70vw;
+          margin-bottom: 10vh;
+        }
         &__title {
           font-size: 3vh;
           font-weight: 700;
           color: $Dark-Green;
           margin-bottom: 2vh;
+          text-align: center;
         }
         &__title:hover {
           color: $Coral;
@@ -57,6 +68,10 @@
       &__image {
         > img {
           height: 30vh;
+          @media only screen and (max-width: $Small) {
+            max-width: 70vw;
+            height: max-content;
+          }
         }
       }
     }
@@ -69,11 +84,14 @@
         font-weight: 700;
         color: $Dark-Green;
         margin-bottom: 2vh;
+        margin-left: 3vw;
       }
-      &__ p {
+      &__p {
         font-size: 2vh;
         font-weight: 500;
         color: $Dark-Green;
+        padding: 0 3vw;
+        margin-bottom: 5vh;
       }
       &__images {
         display: flex;
@@ -93,9 +111,15 @@
 
 .reverse {
   flex-direction: row-reverse;
+  @media only screen and (max-width: $Large) {
+    flex-direction: column;
+  }
 }
 
 .reverseTxt {
   margin-left: 10vw;
   margin-right: 0;
+  @media only screen and (max-width: $Large) {
+    margin-left: 0;
+  }
 }
