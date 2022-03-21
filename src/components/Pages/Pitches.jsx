@@ -18,7 +18,7 @@ const Pitches = ({ lang }) => {
   };
   const mountain = {
     fr: `Le Viscos est un écrin de verdure surplombant la vallée des gaves dans un cadre calme et ombragé. Reposez-vous en immersion dans la nature avec les montagnes comme panorama.`,
-    en: `Le Viscos is located in a santuary of greenery that overhang La Vallée des Gaves (The Torrents' Valley) in a very calm and shady place. Refresh yourself and get back in touch with nature.`,
+    en: `Le Viscos is located in a sanctuary of greenery that overhang La Vallée des Gaves (The Torrents' Valley) in a very calm and shady place. Refresh yourself and get back in touch with nature.`,
     nl: `Le Viscos is gelegen in een heiligdom van groen dat uitsteekt over La Vallée des Gaves (de vallei van de Torrents) op een zeer rustige en schaduwrijke plek. Verfris jezelf en kom weer in contact met de natuur.`,
   };
   const tent = {

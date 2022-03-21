@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "nuka-carousel";
 import List from "../List";
+import { FaSwimmingPool, FaVolleyballBall } from "react-icons/fa";
 
 import pool from "../../assets/pool.jpg";
 import inflatable from "../../assets/inflatable.jpg";
@@ -85,9 +86,11 @@ const Activities = ({ lang }) => {
         <hr className="activities__container__hr" />
         <div className="activities__container__paragraph">
           <p className="activities__container__paragraph__p">
+            <FaSwimmingPool className="activities__container__paragraph__logo" />{" "}
             {firstParagraph[lang]}
           </p>
           <p className="activities__container__paragraph__p">
+            <FaVolleyballBall className="activities__container__paragraph__logo" />{" "}
             {secondParagraph[lang]}
           </p>
           <p className="activities__container__paragraph__p">
