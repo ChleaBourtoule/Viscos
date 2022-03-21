@@ -3,6 +3,7 @@ import Card from "../Card";
 
 import { AiFillStar } from "react-icons/ai";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 
 const Home = ({ lang }) => {
   const summary = {
@@ -179,9 +180,11 @@ const Home = ({ lang }) => {
               {curistsTxt[lang]}
             </h4>
           </div>
-          <button className="home__banner__curist__button">
-            <a href="prices#cure">{curistsBtn[lang]}</a>
-          </button>
+          <NavLink to="/prices">
+            <button className="home__banner__curist__button">
+              {curistsBtn[lang]}
+            </button>
+          </NavLink>
         </div>
         <div className="home__banner__pitch">
           <div className="home__banner__pitch__title">
@@ -190,9 +193,11 @@ const Home = ({ lang }) => {
             </h2>
             <hr className="home__banner__pitch__title__hr" />
           </div>
-          <button className="home__banner__pitch__button">
-            <a href="prices">{priceBtn[lang]}</a>
-          </button>
+          <NavLink to="/prices">
+            <button className="home__banner__pitch__button">
+              {priceBtn[lang]}
+            </button>
+          </NavLink>
         </div>
       </div>
 

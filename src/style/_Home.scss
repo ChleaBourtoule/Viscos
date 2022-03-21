@@ -95,10 +95,7 @@
       align-items: center;
       clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
       &__title {
-        margin-right: 25%;
-        @media only screen and (max-width: $Medium) {
-          margin-right: 10%;
-        }
+        margin-right: 10vw;
         &__txt {
           text-align: center;
           color: $Light-Grey;
@@ -125,10 +122,9 @@
       }
       &__text {
         width: 50%;
-        margin-right: 25%;
+        margin-right: 10vw;
         @media only screen and (max-width: $Medium) {
           width: 60%;
-          margin-right: 10%;
         }
         &__txt {
           color: $Light-Grey;
@@ -142,7 +138,7 @@
         }
       }
       &__button {
-        margin-right: 25%;
+        margin-right: 10vw;
         margin-top: 4vh;
         padding: 1.5vw;
         border-radius: 30px;
@@ -152,6 +148,7 @@
         font-size: 2vh;
         font-weight: 600;
         cursor: pointer;
+        min-width: 25%;
         @media only screen and (max-width: $Medium) {
           font-size: 1.5vh;
         }
