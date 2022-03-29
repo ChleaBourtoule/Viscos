@@ -161,11 +161,25 @@ const Booking = ({ lang }) => {
       <div className="booking__download">
         <h3 className="booking__download__title">{download[lang]}</h3>
         <div className="booking__download__div">
-          <p className="booking__download__div__mobilhomes">{linkMH[lang]}</p>
+          <p className="booking__download__div__mobilhomes">
+            <a
+              href="https://drive.google.com/file/d/1WBBPnxkaVBP9icEr4ocDen5I20NOYR5j/view?usp=sharing"
+              download
+            >
+              {linkMH[lang]}
+            </a>
+          </p>
           <IoDocumentTextSharp className="booking__download__div__icon" />
         </div>
         <div className="booking__download__div">
-          <p className="booking__download__div__camping">{linkC[lang]}</p>
+          <p className="booking__download__div__camping">
+            <a
+              href="https://drive.google.com/file/d/1roK6z_NBNpYSS-ndGtKS85Qksfd_6Qar/view?usp=sharing"
+              download
+            >
+              {linkC[lang]}
+            </a>
+          </p>
           <IoDocumentTextSharp className="booking__download__div__icon" />
         </div>
       </div>
