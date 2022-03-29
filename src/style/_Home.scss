@@ -59,6 +59,9 @@
     &__dates {
       margin-top: 4vh;
       width: 40vw;
+      @media only screen and (max-width: $Large) {
+        width: 70vw;
+      }
       &__txt {
         text-align: center;
         color: $Light-Grey;
