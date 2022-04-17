@@ -25,9 +25,9 @@ const Home = ({ lang }) => {
     nl: `Speciale therapie-aanbieding`,
   };
   const curistsTxt = {
-    fr: `Dans le cadre d'une cure de trois semaines, le Domaine du Viscos vous propose un tarif exceptionnel de 550 € pour deux personnes pendant la durée de la cure.`,
-    en: `We propose a special offer applicable to two persons doing a three weeks therapy for the exclusive price of €550.`,
-    nl: `Voor een therapie van drie weken, le Domaine du Viscos biedt een exclusieve prijs: 550 € voor twee personen gedurende drie weken.`,
+    fr: `Dans le cadre d'une cure de trois semaines, le Domaine du Viscos vous propose un tarif exceptionnel de 550 € hors Juillet/Août pour deux personnes pendant la durée de la cure.`,
+    en: `We propose a special offer applicable to two persons doing a three weeks therapy for the exclusive price of €550 excluding July/August.`,
+    nl: `Voor een therapie van drie weken, le Domaine du Viscos biedt een exclusieve prijs: 550 € exclusief juli/augustus voor twee personen gedurende drie weken.`,
   };
   const curistsBtn = {
     fr: `EN PROFITER`,
