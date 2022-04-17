@@ -1,8 +1,6 @@
 import React from "react";
 import Carousel from "nuka-carousel";
-import { FaMountain } from "react-icons/fa";
-import { GiCampingTent, GiWoodCabin } from "react-icons/gi";
-import { MdCheckroom } from "react-icons/md";
+import CardPitches from "../CardPitches";
 
 import districtA from "../../assets/district_a.jpg";
 import districtB from "../../assets/district_b.jpg";
@@ -56,29 +54,28 @@ const Pitches = ({ lang }) => {
         <h2 className="pitches__container__title">{title[lang]}</h2>
         <hr className="pitches__container__hr" />
         <div className="pitches__container__content">
-          <div className="pitches__container__content__firsttext">
-            <FaMountain className="pitches__container__content__firsttext__icon" />
-            <h6 className="pitches__container__content__firsttext__txt">
-              {mountain[lang]}
-            </h6>
+          <div className="pitches__container__content__div">
+            <CardPitches
+              icon="mountain"
+              subtxt={mountain}
+              lang={lang}
+              color="coral"
+            />
+            <CardPitches icon="tent" subtxt={tent} lang={lang} color="light" />
           </div>
-          <div className="pitches__container__content__secondtext">
-            <GiCampingTent className="pitches__container__content__secondtext__icon" />
-            <h6 className="pitches__container__content__secondtext__txt">
-              {tent[lang]}
-            </h6>
-          </div>
-          <div className="pitches__container__content__thirdtext">
-            <GiWoodCabin className="pitches__container__content__thirdtext__icon" />
-            <h6 className="pitches__container__content__thirdtext__txt">
-              {cabin[lang]}
-            </h6>
-          </div>
-          <div className="pitches__container__content__fourthtext">
-            <MdCheckroom className="pitches__container__content__fourthtext__icon" />
-            <h6 className="pitches__container__content__fourthtext__txt">
-              {interior[lang]}
-            </h6>
+          <div className="pitches__container__content__divsecond">
+            <CardPitches
+              icon="cabin"
+              subtxt={cabin}
+              lang={lang}
+              color="light"
+            />
+            <CardPitches
+              icon="room"
+              subtxt={interior}
+              lang={lang}
+              color="coral"
+            />
           </div>
         </div>
       </div>

@@ -1,3 +1,6 @@
+@import "node_modules/sass-google-fonts/src/GoogleFonts.scss";
+@include google-font("Rubik");
 .App {
   text-align: center;
+  font-family: "Rubik";
 }

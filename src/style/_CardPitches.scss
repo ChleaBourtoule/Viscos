@@ -1,0 +1,121 @@
+.cardpitch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30vw;
+  height: 25vw;
+  background-color: $Coral;
+  border-radius: 10px;
+  padding-top: 4vh;
+  @media only screen and (max-width: $XLarge) {
+    width: 30vw;
+    padding-bottom: 4vh;
+    margin-bottom: 10vh;
+    height: 30vw;
+  }
+  @media only screen and (max-width: $Large) {
+    width: 40vw;
+    padding-bottom: 4vh;
+    margin-bottom: 10vh;
+    height: 40vw;
+  }
+  @media only screen and (max-width: $Medium) {
+    width: 50vw;
+    padding-bottom: 4vh;
+  }
+  @media only screen and (max-width: $Small) {
+    height: 60vw;
+    min-height: fit-content;
+  }
+  &__logo {
+    font-size: 4vw;
+    color: $Dark-Green;
+    margin-bottom: 3vh;
+    @media only screen and (max-width: $Medium) {
+      font-size: 50px;
+      min-height: 2vh;
+    }
+    @media only screen and (max-width: $Small) {
+      font-size: 30px;
+    }
+  }
+  &__subtxt {
+    color: $Light-Grey;
+    font-size: 1vw;
+    line-height: 3vh;
+    font-weight: 400;
+    padding: 0 2vw;
+    @media only screen and (max-width: $Large) {
+      font-size: 1.5vw;
+    }
+    @media only screen and (max-width: $Medium) {
+      font-size: 1.7vw;
+    }
+    @media only screen and (max-width: $Small) {
+      font-size: 2.3vw;
+      line-height: 2.3vh;
+    }
+  }
+}
+
+.cardlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30vw;
+  height: 25vw;
+  background-color: $Dark-Green;
+  border-radius: 10px;
+  padding-top: 4vh;
+  @media only screen and (max-width: $XLarge) {
+    width: 30vw;
+    padding-bottom: 4vh;
+    margin-bottom: 10vh;
+    height: 30vw;
+  }
+  @media only screen and (max-width: $Large) {
+    width: 40vw;
+    padding-bottom: 4vh;
+    margin-bottom: 10vh;
+    height: 40vw;
+  }
+  @media only screen and (max-width: $Medium) {
+    width: 50vw;
+    padding-bottom: 4vh;
+  }
+  @media only screen and (max-width: $Small) {
+    height: 60vw;
+    min-height: fit-content;
+  }
+  &__logo {
+    font-size: 4vw;
+    color: $Light-Grey;
+    margin-bottom: 3vh;
+    @media only screen and (max-width: $Medium) {
+      font-size: 50px;
+      min-height: 2vh;
+    }
+    @media only screen and (max-width: $Small) {
+      font-size: 30px;
+    }
+  }
+  &__subtxtlight {
+    color: $Coral;
+    font-size: 1vw;
+    font-weight: 400;
+    padding: 0 2vw;
+    line-height: 3vh;
+    @media only screen and (max-width: $Large) {
+      font-size: 1.5vw;
+    }
+    @media only screen and (max-width: $Medium) {
+      font-size: 1.7vw;
+    }
+    @media only screen and (max-width: $Small) {
+      font-size: 2.3vw;
+      line-height: 2.3vh;
+    }
+  }
+}
