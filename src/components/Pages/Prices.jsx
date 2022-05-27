@@ -19,9 +19,9 @@ const Prices = ({ lang }) => {
     nl: `Tenten, caravans en campers`,
   };
   const date1 = {
-    fr: `Basse saison : du 4/06/2022 au 09/07/2022 et du 20/08/2022 au 1/10/2022.`,
-    en: `Low season: 6/4/2022 — 7/9/2022 and 8/20/2022 — 10/1/2022.`,
-    nl: `Laagseizoen: 4/6/2022 — 7/9/2022 en 20/8/2022 — 1/10/2022.`,
+    fr: `Basse saison : du 10/06/2022 au 09/07/2022 et du 20/08/2022 au 1/10/2022.`,
+    en: `Low season: 6/10/2022 — 7/9/2022 and 8/20/2022 — 10/1/2022.`,
+    nl: `Laagseizoen: 10/6/2022 — 7/9/2022 en 20/8/2022 — 1/10/2022.`,
   };
   const date2 = {
     fr: `Haute saison : du 09/07/2022 au 20/08/2022.`,

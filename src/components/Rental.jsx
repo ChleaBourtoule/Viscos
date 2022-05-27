@@ -8,9 +8,9 @@ const Rental = ({ lang }) => {
   };
   const row1 = {
     time: {
-      fr: `04/06/2022 — 02/06/2022`,
-      en: `6/4 to 7/2`,
-      nl: `van 5/1 tot 6/19`,
+      fr: `11/06/2022 — 02/06/2022`,
+      en: `06/11 to 07/02`,
+      nl: `van 11/06 tot 02/07`,
     },
     price: {
       fr: `250 €`,
@@ -21,8 +21,8 @@ const Rental = ({ lang }) => {
   const row2 = {
     time: {
       fr: `02/07/2022 — 09/07/2022`,
-      en: `7/2 to 7/9`,
-      nl: `van 6/19 tot 7/10`,
+      en: `07/02 to 07/09`,
+      nl: `van 02/07 tot 09/07`,
     },
     price: {
       fr: `350 €`,
@@ -33,8 +33,8 @@ const Rental = ({ lang }) => {
   const row3 = {
     time: {
       fr: `09/07/2022 — 20/08/2022`,
-      en: `7/9 to 8/20`,
-      nl: `van 7/10 tot 8/14`,
+      en: `07/09 to 08/20`,
+      nl: `van 09/07 tot 20/08`,
     },
     price: {
       fr: `460 €`,
@@ -45,8 +45,8 @@ const Rental = ({ lang }) => {
   const row4 = {
     time: {
       fr: `20/08/2022 — 27/08/2022`,
-      en: `8/20 to 8/27`,
-      nl: `van 8/14 tot 8/21`,
+      en: `08/20 to 08/27`,
+      nl: `van 20/08 tot 27/08`,
     },
     price: {
       fr: `400 €`,
@@ -57,8 +57,8 @@ const Rental = ({ lang }) => {
   const row5 = {
     time: {
       fr: `27/08/2022 — 01/10/2022`,
-      en: `8/27 to 10/1`,
-      nl: `van 8/21 tot 10/2`,
+      en: `08/27 to 10/01`,
+      nl: `van 27/08 tot 01/10`,
     },
     price: {
       fr: `250 €`,
