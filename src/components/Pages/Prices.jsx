@@ -41,9 +41,9 @@ const Prices = ({ lang }) => {
       nl: `Laagseizoen / Hoogseizoen`,
     },
     price: {
-      fr: `13,50 € / 17,00 €`,
-      en: `€13.50 / €17.00`,
-      nl: `13,50 € / 17,00 €`,
+      fr: `13,50 € / 16,50 €`,
+      en: `€13.50 / €16.50`,
+      nl: `13,50 € / 16,50 €`,
     },
     night: {
       fr: `la nuit`,
