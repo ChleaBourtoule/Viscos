@@ -7,6 +7,10 @@ import districtB from "../../assets/district_b.jpg";
 import tents from "../../assets/tents.jpg";
 import mobilhomes from "../../assets/mobilhomes.jpg";
 import inside from "../../assets/inside.jpg";
+import mobilhomes2 from "../../assets/mh.jpg";
+import pitches1 from "../../assets/pitches1.jpg";
+import pitches2 from "../../assets/pitches2.jpg";
+import tents2 from "../../assets/tent.jpg";
 
 const Pitches = ({ lang }) => {
   const title = {
@@ -45,8 +49,12 @@ const Pitches = ({ lang }) => {
       >
         <img src={districtA} />
         <img src={districtB} />
+        <img src={pitches1} />
+        <img src={pitches2} />
+        <img src={tents2} />
         <img className="pitches__carousel__img" src={tents} />
         <img src={mobilhomes} />
+        <img src={mobilhomes2} />
         <img src={inside} />
       </Carousel>
       {/* CONTAINER CONTENT */}
