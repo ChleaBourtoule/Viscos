@@ -2,8 +2,13 @@ import React from "react";
 import Carousel from "nuka-carousel";
 import List from "../List";
 
+import accueil from "../../assets/Accueil1.jpg";
+import accueil2 from "../../assets/Accueil2.jpg";
 import grocery from "../../assets/grocery.jpg";
 import showers from "../../assets/showers.jpg";
+import lavabo from "../../assets/lavabo.jpg";
+import laverie from "../../assets/laverie.jpg";
+import sanitaires from "../../assets/sanitaires.jpg";
 
 const Services = ({ lang }) => {
   const title = {
@@ -97,8 +102,13 @@ const Services = ({ lang }) => {
         heightMode="first"
         className="services__carousel"
       >
-        <img src={grocery} />
+        <img src={accueil2} />
+        <img src={accueil} />
+        <img className="pitches__carousel__img" src={grocery} />
+        <img src={lavabo} />
+        <img src={laverie} />
         <img src={showers} />
+        <img src={sanitaires} />
       </Carousel>
       {/* CONTAINER CONTENT */}
       <div className="services__container">
