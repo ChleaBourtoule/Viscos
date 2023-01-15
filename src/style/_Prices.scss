@@ -44,6 +44,12 @@
       @media only screen and (max-width: $Small) {
         padding: 0 5vw;
       }
+      &__orange {
+        margin-top: 4vh;
+      font-size: 2vh;
+      font-weight: 700;
+        color: $Coral;
+      }
     }
     &__plans {
       display: flex;

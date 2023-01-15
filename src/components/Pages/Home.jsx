@@ -15,9 +15,9 @@ const Home = ({ lang }) => {
     nl: `De Viscos is een 2 sterrencamping, volgens de Franse normen van 2017. De camping ligt in een weelderig groene omgeving met veel verschillende bomen. Vanaf de camping heb je een prachtig uitzicht op de valei van de Gaves. De tijd lijkt hier stil te staan, het is dan ook niet moeilijk om volop te genieten en te relaxen`,
   };
   const dates = {
-    fr: `Dates d'ouverture : du 10/06/2022 au 1/10/2022`,
-    en: `Opening: 6/10/2022 — 10/1/2022`,
-    nl: `Opening: 6/10/2022 — 10/1/2022`,
+    fr: `Dates d'ouverture : du 15/06/2023 au 15/09/2023`,
+    en: `Opening: 6/15/2023 — 9/15/2023`,
+    nl: `Opening: 6/15/2023 — 9/15/2023`,
   };
   const curistsTitle = {
     fr: `Offre spéciale curistes`,
@@ -104,14 +104,14 @@ const Home = ({ lang }) => {
   };
   const bike = {
     first: {
-      fr: `Tours de France 2022 : étape`,
-      en: `Tour de France 2022 : stage`,
-      nl: `Tour de France 2022 : etappe`,
+      fr: `Tours de France 2023 : étape`,
+      en: `Tour de France 2023 : stage`,
+      nl: `Tour de France 2023 : etappe`,
     },
     second: {
-      fr: `, le 21 juillet 2022.`,
-      en: `, Jully 21, 2022`,
-      nl: `, 21 juli 2022.`,
+      fr: `, le 06 juillet 2023.`,
+      en: `, Jully 06, 2023`,
+      nl: `, 06 juli 2023.`,
     },
   };
 
@@ -223,9 +223,9 @@ const Home = ({ lang }) => {
             {bike.first[lang]}{" "}
             <a
               style={{ color: "#d96846" }}
-              href="https://www.letour.fr/fr/etape-18"
+              href="https://www.letour.fr/fr/etape-6"
             >
-              Lourdes &gt; Hautacam
+              Tarbes &gt; Cauterets-Cambasque
             </a>
             {bike.second[lang]}
           </h3>

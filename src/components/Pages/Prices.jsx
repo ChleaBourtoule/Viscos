@@ -19,14 +19,19 @@ const Prices = ({ lang }) => {
     nl: `Tenten, caravans en campers`,
   };
   const date1 = {
-    fr: `Basse saison : du 10/06/2022 au 09/07/2022 et du 20/08/2022 au 1/10/2022.`,
-    en: `Low season: 6/10/2022 — 7/9/2022 and 8/20/2022 — 10/1/2022.`,
-    nl: `Laagseizoen: 10/6/2022 — 7/9/2022 en 20/8/2022 — 1/10/2022.`,
+    fr: `Basse saison : du 15/06/2023 au 08/07/2023 et du 19/08/2023 au 15/09/2023.`,
+    en: `Low season: 6/15/2023 — 7/08/2023 and 8/19/2023 — 9/15/2023.`,
+    nl: `Laagseizoen: 6/15/2023 — 7/08/2023 en 8/19/2023 — 9/15/2023.`,
   };
   const date2 = {
-    fr: `Haute saison : du 09/07/2022 au 20/08/2022.`,
-    en: `High season: 7/9/2022 — 8/20/2022.`,
-    nl: `Hoogseizoen: 7/9/2022 — 20-8/2022.`,
+    fr: `Haute saison : du 08/07/2023 au 19/08/2023.`,
+    en: `High season: 7/08/2023 — 8/19/2023.`,
+    nl: `Hoogseizoen: 7/08/2023 — 8/19/2023.`,
+  };
+  const date3 = {
+    fr: `Les tarifs ne bougent pas en 2023 !`,
+    en: `Prices do not change in 2023 !`,
+    nl: `Prijzen veranderen niet in 2023 !`,
   };
 
   const plan1 = {
@@ -147,6 +152,7 @@ const Prices = ({ lang }) => {
         <h3 className="prices__pitches__title">{plan[lang]}</h3>
         <p className="prices__pitches__date">{date1[lang]}</p>
         <p className="prices__pitches__date">{date2[lang]}</p>
+        <p className="prices__pitches__date__orange">{date3[lang]}</p>
         <div className="prices__pitches__plans">
           {plans &&
             plans.map((plan, index) => {
