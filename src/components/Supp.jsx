@@ -2,9 +2,9 @@ import React from "react";
 
 const Supp = ({ lang }) => {
   const supp = {
-    fr: `Suppléments`,
-    en: `Extras (per night)`,
-    nl: `Extras (per nacht)`,
+    fr: `Détails`,
+    en: `Details (per night)`,
+    nl: `Details (per nacht)`,
   };
   const low = {
     fr: `Basse saison`,
@@ -85,6 +85,23 @@ const Supp = ({ lang }) => {
       nl: `1,00 €`,
     },
   };
+  const elec = {
+    title: {
+      fr: `Electricité`,
+      en: `Electricity`,
+      nl: `Elektriciteit`,
+    },
+    low: {
+      fr: `3,50 €`,
+      en: `€3.50`,
+      nl: `3,50 €`,
+    },
+    high: {
+      fr: `3,50 €`,
+      en: `€3.50`,
+      nl: `3,50 €`,
+    },
+  };
   return (
     <div className="supp">
       <table>
@@ -113,6 +130,11 @@ const Supp = ({ lang }) => {
           <td>{animal.title[lang]}</td>
           <td>{animal.low[lang]}</td>
           <td>{animal.high[lang]}</td>
+        </tr>
+        <tr>
+          <td>{elec.title[lang]}</td>
+          <td>{elec.low[lang]}</td>
+          <td>{elec.high[lang]}</td>
         </tr>
       </table>
     </div>
