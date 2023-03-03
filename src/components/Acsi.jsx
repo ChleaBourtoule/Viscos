@@ -3,9 +3,9 @@ import React from "react";
 const Acsi = ({ lang }) => {
   const acsi = {
     title: {
-      fr: `Forfait carte ACSI`,
-      en: `ACSI Card Package`,
-      nl: `ACSI-kaartpakket`,
+      fr: `Forfait carte ACSI (uniquement en basse saison)`,
+      en: `ACSI Card Package (only during low season)`,
+      nl: `ACSI-kaartpakket (alleen in het laagseizoen)`,
     },
     row1: {
       fr: `Forfait pour un emplacement pour deux personnes avec électricité`,
