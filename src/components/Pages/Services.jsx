@@ -62,6 +62,11 @@ const Services = ({ lang }) => {
     en: `Full wifi coverage of the campsite`,
     nl: `Volledige wifi-dekking van de camping`,
   };
+  const accessible = {
+    fr: `Une majorité d'emplacements accessibles aux personnes à mobilité réduite ainsi que des sanitaires adaptés`,
+    en: `A majority of pitches accessible to disabled persons as well as adapted sanitary facilities`,
+    nl: `De meeste staanplaatsen zijn toegankelijk voor gehandicapten en er is aangepast sanitair`,
+  };
 
   const list = [
     {
@@ -83,6 +88,10 @@ const Services = ({ lang }) => {
     {
       icon: "washing",
       txt: washing[lang],
+    },
+    {
+      icon: "accessible",
+      txt: accessible[lang],
     },
     {
       icon: "wifi",
