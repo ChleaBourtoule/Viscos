@@ -9,6 +9,8 @@ import {
   GiCastle,
   GiShuttlecock,
 } from "react-icons/gi";
+import { BiHandicap } from "react-icons/bi";
+
 import { FaIceCream, FaBook, FaWifi } from "react-icons/fa";
 
 const List = ({ txt, icon }) => {
@@ -36,6 +38,8 @@ const List = ({ txt, icon }) => {
         <MdSportsKabaddi className="list__logo" />
       ) : icon === "badminton" ? (
         <GiShuttlecock className="list__logo" />
+      ) : icon === "accessible" ? (
+        <BiHandicap className="list__logo" />
       ) : (
         ""
       )}
