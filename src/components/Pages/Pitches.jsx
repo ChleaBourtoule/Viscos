@@ -38,6 +38,11 @@ const Pitches = ({ lang }) => {
     en: `Our two rooms mobile homes can accommodate four persons. They comprise a kitchen, toilets, a bathroom, a private padeo, and a parking space.`,
     nl: `Onze stacaravans met twee kamers bieden plaats aan vier personen. Ze omvatten een keuken, toiletten, een badkamer, een eigen padeo en een parkeerplaats.`,
   };
+  const inventaire = {
+    fr: `Inventaire`,
+    en: `Stocktale`,
+    nl: `Inventarisatie`,
+  };
   return (
     <div className="pitches">
       {/* CAROUSEL */}
@@ -82,6 +87,7 @@ const Pitches = ({ lang }) => {
               icon="room"
               subtxt={interior}
               lang={lang}
+              link={inventaire}
               color="coral"
             />
           </div>
