@@ -30,14 +30,14 @@ const Activities = ({ lang }) => {
   };
 
   const castle = {
-    fr: `Une structure gonflable ouverte de 10h à 12h puis de 17h à 20h`,
-    en: `An inflatable structure opened from 10am to 12am and from 5pm to 8pm`,
-    nl: `Een opblaasbare structuur geopend van 10u tot 12u en van 17u tot 20u`,
+    fr: `Deux structures gonflables ouvertes de 10h à 12h puis de 17h à 20h`,
+    en: `Two inflatable structures opened from 10am to 12am and from 5pm to 8pm`,
+    nl: `Twee opblaasbare structuurs geopend van 10u tot 12u en van 17u tot 20u`,
   };
   const trampoline = {
-    fr: `Deux trampolines`,
-    en: `Two trampolines`,
-    nl: `Twee trampolines`,
+    fr: `Un trampoline`,
+    en: `One trampoline`,
+    nl: `Een trampolines`,
   };
   // const slider = {
   //   fr: `Un portique, un tourniquet et un tobogan`,
