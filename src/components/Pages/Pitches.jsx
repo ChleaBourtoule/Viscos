@@ -24,14 +24,14 @@ const Pitches = ({ lang }) => {
     nl: `Le Viscos is gelegen in een heiligdom van groen dat uitsteekt over La Vallée des Gaves (de vallei van de Torrents) op een zeer rustige en schaduwrijke plek. Verfris jezelf en kom weer in contact met de natuur.`,
   };
   const tent = {
-    fr: `Le camping comporte soixante neuf emplacements spacieux et ombragés destinés aux tentes, caravanes et camping-cars disposant pour la pluspart d'une alimentation électrique. Les vehicules peuvent être stationnés sur les emplacements et les annimaux sont autorisés.`,
-    en: `With sixty nine shady spacious electrified pitches we have plenty of place for your tent, caravan, or camper van. Vehicules may be parked on the pitches and animals are allowed.`,
-    nl: `Met negenenzestig schaduwrijke ruime geëlektrificeerde plaatsen hebben we genoeg plaats voor uw tent, caravan of camper. Voertuigen mogen op de staanplaatsen geparkeerd worden en dieren zijn toegestaan.`,
+    fr: `Le camping comporte soixante sept emplacements spacieux et ombragés destinés aux tentes, caravanes et camping-cars disposant pour la plupart d'une alimentation électrique. Les vehicules peuvent être stationnés sur les emplacements et les annimaux sont autorisés.`,
+    en: `With sixty seven shady spacious electrified pitches we have plenty of place for your tent, caravan, or camper van. Vehicules may be parked on the pitches and animals are allowed.`,
+    nl: `Met zevenenzestig schaduwrijke ruime geëlektrificeerde plaatsen hebben we genoeg plaats voor uw tent, caravan of camper. Voertuigen mogen op de staanplaatsen geparkeerd worden en dieren zijn toegestaan.`,
   };
   const cabin = {
-    fr: `Le domaine est doté de onze mobil-homes espacés situés dans une zone arborée proche des Thermes de Beaucens. Une zone est prévue pour faire des grillades.`,
-    en: `The domain is endowed with eleven spaced mobile homes situated in a tree-filled area near the thermal baths of Beaucens. You will find a dedicated BBQ area near the mobile homes`,
-    nl: `Het domein is begiftigd met elf stacaravans op een afstand van elkaar, gelegen in een met bomen begroeid gebied in de buurt van de thermale baden van Beaucens. In de buurt van de stacaravans vindt u een speciale barbecueplek`,
+    fr: `Le domaine est doté de onze mobil-homes (8 locatifs et 3 résidentiels) espacés situés dans une zone arborée proche des Thermes de Beaucens. Une zone est prévue pour faire des grillades.`,
+    en: `The domain is endowed with eleven spaced mobile homes (8 to rent and 3 reseidential) situated in a tree-filled area near the thermal baths of Beaucens. You will find a dedicated BBQ area near the mobile homes`,
+    nl: `Het domein is begiftigd met elf stacaravans (8 te huur en 3 woningen) op een afstand van elkaar, gelegen in een met bomen begroeid gebied in de buurt van de thermale baden van Beaucens. In de buurt van de stacaravans vindt u een speciale barbecueplek`,
   };
   const interior = {
     fr: `Nos locations comprenant deux chambres sont prévues pour quatre personnes. Elles disposent d'une cuisine, de toilettes, d'une salle d'eau et d'une terrasse privative ainsi que d'un emplacement de stationnement.`,
