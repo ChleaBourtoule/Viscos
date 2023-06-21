@@ -19,9 +19,9 @@ const Activities = ({ lang }) => {
     nl: `De camping heeft een verwarmd zwembad van 60 m² met gratis ligstoelen. Het zwembad is geopend van 11.00 tot 20.00 uur.`,
   };
   const secondParagraph = {
-    fr: `Un terrain de volley sur herbe, un boulodrome et une table de ping-pong vous sont proposés sur le camp. Nous prêtons, ballons, boules et raquettes.`,
-    en: `A volley field, a boules pitch and a ping-pong table are at your disposal in the campsite. We lend balls, boules and rackets.`,
-    nl: `Op de camping staan ​​een volleybalveld, een jeu de boulesbaan en een tafeltennistafel tot uw beschikking. Wij lenen ballen, jeu de boules en rackets uit.`,
+    fr: `Un terrain de volley sur herbe et une table de ping-pong vous sont proposés sur le camp. Nous prêtons, ballons et raquettes.`,
+    en: `A volley field and a ping-pong table are at your disposal in the campsite. We lend balls and rackets.`,
+    nl: `Op de camping staan ​​een volleybalveld en een tafeltennistafel tot uw beschikking. Wij lenen ballen, jeu de boules en rackets uit.`,
   };
   const thirdParagraph = {
     fr: `Pour le divertissement des plus jeunes, vous trouverez une aire de jeux comprenant :`,
@@ -39,11 +39,11 @@ const Activities = ({ lang }) => {
     en: `Two trampolines`,
     nl: `Twee trampolines`,
   };
-  const slider = {
-    fr: `Un portique, un tourniquet et un tobogan`,
-    en: `A crossbar, a merry-go-round and a slide`,
-    nl: `Een lat, een draaimolen en een glijbaan`,
-  };
+  // const slider = {
+  //   fr: `Un portique, un tourniquet et un tobogan`,
+  //   en: `A crossbar, a merry-go-round and a slide`,
+  //   nl: `Een lat, een draaimolen en een glijbaan`,
+  // };
   const badminton = {
     fr: `Un fillet de badminton`,
     en: `A badminton net`,
@@ -59,10 +59,10 @@ const Activities = ({ lang }) => {
       icon: "trampoline",
       txt: trampoline[lang],
     },
-    {
-      icon: "slider",
-      txt: slider[lang],
-    },
+    // {
+    //   icon: "slider",
+    //   txt: slider[lang],
+    // },
     {
       icon: "badminton",
       txt: badminton[lang],
