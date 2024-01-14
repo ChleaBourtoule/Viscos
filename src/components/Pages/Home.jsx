@@ -7,12 +7,12 @@ import { NavLink } from "react-router-dom";
 
 const Home = ({ lang }) => {
   const summary = {
-    fr: `Le Viscos est un camping de 67
+    fr: `Le Viscos est un camping 2 étoiles nouvelles normes (2017) de 67
       emplacements nus et 11 mobile homes (8 locatifs et 3 de loisirs) situé dans un écrin de verdure
       surplombant la vallée des Gaves. Ici, le temps s’arrête, vous
       détendre devient une activité à plein temps.`,
-    en: `Le Viscos is a campsite of 67 pitches and 11 mobile homes (8 to rent and 3 residential) located in a santuary of greenery that overhang La Vallée des Gaves (The Torrents' Valley). Here, the time stops and resting becomes a full-time activity.`,
-    nl: `Le Viscos is een camping met 67 plaatsen en 11 stacaravans (8 te huur en 3 woningen), gelegen in een oase van groen boven La Vallée des Gaves. Hier stopt de tijd en wordt rusten een voltijdse bezigheid.`,
+    en: `Le Viscos is a two stars campsite (regraded in 2017) of 67 pitches and 11 mobile homes (8 to rent and 3 residential) located in a santuary of greenery that overhang La Vallée des Gaves (The Torrents' Valley). Here, the time stops and resting becomes a full-time activity.`,
+    nl: `Le Viscos is een tweesterrencamping (gerenoveerd in 2017) met 67 plaatsen en 11 stacaravans (8 te huur en 3 woningen), gelegen in een oase van groen boven La Vallée des Gaves. Hier stopt de tijd en wordt rusten een voltijdse bezigheid.`,
   };
   const dates = {
     fr: `Dates d'ouverture : du 15/06/2023 au 15/09/2023`,
