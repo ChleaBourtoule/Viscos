@@ -13,7 +13,7 @@
     "nuka-carousel": "^4.8.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.3.1",
+    "react-icons": "^4.12.0",
     "react-router-dom": "^6.2.1",
     "sass-google-fonts": "^1.0.1"
   },

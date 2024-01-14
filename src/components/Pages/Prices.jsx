@@ -19,19 +19,19 @@ const Prices = ({ lang }) => {
     nl: `Tenten, caravans en campers`,
   };
   const date1 = {
-    fr: `Basse saison : du 15/06/2023 au 08/07/2023 et du 19/08/2023 au 15/09/2023.`,
-    en: `Low season: 6/15/2023 — 7/08/2023 and 8/19/2023 — 9/15/2023.`,
-    nl: `Laagseizoen: 6/15/2023 — 7/08/2023 en 8/19/2023 — 9/15/2023.`,
+    fr: `Basse saison : du 15/06/2024 au 06/07/2024 et du 17/08/2024 au 15/09/2024.`,
+    en: `Low season: 6/15/2024 — 7/06/2024 and 8/17/2024 — 9/15/2024.`,
+    nl: `Laagseizoen: 6/15/2024 — 7/06/2024 en 8/17/2024 — 9/15/2024.`,
   };
   const date2 = {
-    fr: `Haute saison : du 08/07/2023 au 19/08/2023.`,
-    en: `High season: 7/08/2023 — 8/19/2023.`,
-    nl: `Hoogseizoen: 7/08/2023 — 8/19/2023.`,
+    fr: `Haute saison : du 06/07/2024 au 17/08/2024.`,
+    en: `High season: 7/06/2024 — 8/17/2024.`,
+    nl: `Hoogseizoen: 7/06/2024 — 8/17/2024.`,
   };
   const date3 = {
-    fr: `Les tarifs ne bougent pas en 2023 !`,
-    en: `Prices do not change in 2023 !`,
-    nl: `Prijzen veranderen niet in 2023 !`,
+    fr: `Les tarifs ne bougent pas en 2024 !`,
+    en: `Prices do not change in 2024 !`,
+    nl: `Prijzen veranderen niet in 2024 !`,
   };
 
   const plan1 = {
@@ -129,9 +129,9 @@ const Prices = ({ lang }) => {
     nl: `Toeristenbelasting`,
   };
   const taxSubtxt = {
-    fr: `La taxe de séjour s'appliquant pour les personnes de plus de 18 ans est de 0,22 € par personne et par nuit`,
-    en: `Persons older than 18 y.o. are charged €0.22 per night`,
-    nl: `Personen ouder dan 18 jaar betalen € 0,22 per nacht`,
+    fr: `La taxe de séjour s'appliquant pour les personnes de plus de 18 ans est de 0,29 € par personne et par nuit`,
+    en: `Persons older than 18 y.o. are charged €0.29 per night`,
+    nl: `Personen ouder dan 18 jaar betalen € 0,29 per nacht`,
   };
 
   const reservation = {
