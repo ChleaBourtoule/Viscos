@@ -3,6 +3,7 @@ import Card from "../Card";
 
 import { AiFillStar } from "react-icons/ai";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import { LiaBicycleSolid } from "react-icons/lia";
 import { NavLink } from "react-router-dom";
 
 const Home = ({ lang }) => {
@@ -15,9 +16,9 @@ const Home = ({ lang }) => {
     nl: `Le Viscos is een tweesterrencamping (gerenoveerd in 2017) met 67 plaatsen en 11 stacaravans (8 te huur en 3 woningen), gelegen in een oase van groen boven La Vallée des Gaves. Hier stopt de tijd en wordt rusten een voltijdse bezigheid.`,
   };
   const dates = {
-    fr: `Dates d'ouverture : du 15/06/2023 au 15/09/2023`,
-    en: `Opening: 6/15/2023 — 9/15/2023`,
-    nl: `Opening: 6/15/2023 — 9/15/2023`,
+    fr: `Dates d'ouverture : du 15/06/2024 au 15/09/2024`,
+    en: `Opening: 6/15/2024 — 9/15/2024`,
+    nl: `Opening: 6/15/2024 — 9/15/2024`,
   };
   const curistsTitle = {
     fr: `Offre spéciale curistes`,
@@ -104,14 +105,14 @@ const Home = ({ lang }) => {
   };
   const bike = {
     first: {
-      fr: `Tours de France 2023 : étape`,
-      en: `Tour de France 2023 : stage`,
-      nl: `Tour de France 2023 : etappe`,
+      fr: `Tours de France 2024 : étape`,
+      en: `Tour de France 2024 : stage`,
+      nl: `Tour de France 2024 : etappe`,
     },
     second: {
-      fr: `, le 06 juillet 2023.`,
-      en: `, Jully 06, 2023`,
-      nl: `, 06 juli 2023.`,
+      fr: `, le 13 juillet 2024.`,
+      en: `, Jully 13, 2024`,
+      nl: `, 13 juli 2024.`,
     },
   };
 
@@ -217,18 +218,21 @@ const Home = ({ lang }) => {
         </div>
         <div className="home__discover__desc">
           <hr className="home__discover__desc__hr" />
-          <h3 className="home__discover__desc__txt">{routard[lang]}</h3>
-          <hr className="home__discover__desc__hr" />
+          <div>
+            <LiaBicycleSolid className="card__logo" />
+          </div>
           <h3 className="home__discover__desc__txt">
             {bike.first[lang]}{" "}
             <a
               style={{ color: "#d96846" }}
-              href="https://www.letour.fr/fr/etape-6"
+              href="https://www.letour.fr/fr/etape-14"
             >
-              Tarbes &gt; Cauterets-Cambasque
+              Pau &gt; Saint-Lary-Soulan
             </a>
             {bike.second[lang]}
           </h3>
+          <hr className="home__discover__desc__hr" />
+          <h3 className="home__discover__desc__txt">{routard[lang]}</h3>
         </div>
       </div>
     </div>
