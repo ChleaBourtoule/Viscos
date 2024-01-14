@@ -150,10 +150,10 @@ const Home = ({ lang }) => {
           <h1 className="home__presentation__prez__title">
             CAMPING DOMAINE DU VISCOS
           </h1>
-          {/* <div className="home__presentation__prez__stars">
+          <div className="home__presentation__prez__stars">
             <AiFillStar className="home__presentation__prez__stars__star" />
             <AiFillStar className="home__presentation__prez__stars__star" />
-          </div> */}
+          </div>
         </div>
         <hr className="home__presentation__hr" />
         <div className="home__presentation__text">
