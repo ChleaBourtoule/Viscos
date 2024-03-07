@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 
 const Home = ({ lang }) => {
   const summary = {
-    fr: `Le Viscos est un camping 2 étoiles nouvelles normes (2017) de 67
+    fr: `Le Viscos est un camping 2 étoiles nouvelles normes (2023) de 67
       emplacements nus et 11 mobile homes (8 locatifs et 3 de loisirs) situé dans un écrin de verdure
       surplombant la vallée des Gaves. Ici, le temps s’arrête, vous
       détendre devient une activité à plein temps.`,
