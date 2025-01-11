@@ -19,19 +19,19 @@ const Prices = ({ lang }) => {
     nl: `Tenten, caravans en campers`,
   };
   const date1 = {
-    fr: `Basse saison : du 15/06/2024 au 06/07/2024 et du 17/08/2024 au 15/09/2024.`,
-    en: `Low season: 6/15/2024 — 7/06/2024 and 8/17/2024 — 9/15/2024.`,
-    nl: `Laagseizoen: 6/15/2024 — 7/06/2024 en 8/17/2024 — 9/15/2024.`,
+    fr: `Basse saison : du 15/06/2025 au 05/07/2025 et du 16/08/2025 au 15/09/2025.`,
+    en: `Low season: 6/15/2025 — 7/05/2025 and 8/16/2025 — 9/15/2025.`,
+    nl: `Laagseizoen: 6/15/2025 — 7/05/2025 en 8/16/2025 — 9/15/2025.`,
   };
   const date2 = {
-    fr: `Haute saison : du 06/07/2024 au 17/08/2024.`,
-    en: `High season: 7/06/2024 — 8/17/2024.`,
-    nl: `Hoogseizoen: 7/06/2024 — 8/17/2024.`,
+    fr: `Haute saison : du 05/07/2025 au 16/08/2025.`,
+    en: `High season: 7/05/2025 — 8/16/2025.`,
+    nl: `Hoogseizoen: 7/05/2025 — 8/16/2025.`,
   };
   const date3 = {
-    fr: `Les tarifs ne bougent pas en 2024 !`,
-    en: `Prices do not change in 2024 !`,
-    nl: `Prijzen veranderen niet in 2024 !`,
+    fr: `Les tarifs ne bougent pas en 2025 !`,
+    en: `Prices do not change in 2025 !`,
+    nl: `Prijzen veranderen niet in 2025 !`,
   };
 
   const plan1 = {
@@ -78,9 +78,9 @@ const Prices = ({ lang }) => {
       nl: `Laagseizoen / Hoogseizoen`,
     },
     price: {
-      fr: `17,00 € / 20,00 €`,
-      en: `€17.00 / €20.00`,
-      nl: `17,00 € / 20,00 €`,
+      fr: `17,50 € / 20,50 €`,
+      en: `€17.50 / €20.50`,
+      nl: `17,50 € / 20,50 €`,
     },
     night: {
       fr: `la nuit`,
