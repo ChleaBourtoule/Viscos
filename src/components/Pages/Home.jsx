@@ -16,9 +16,9 @@ const Home = ({ lang }) => {
     nl: `Le Viscos is een tweesterrencamping (gerenoveerd in 2017) met 67 plaatsen en 11 stacaravans (8 te huur en 3 woningen), gelegen in een oase van groen boven La Vallée des Gaves. Hier stopt de tijd en wordt rusten een voltijdse bezigheid.`,
   };
   const dates = {
-    fr: `Dates d'ouverture : du 15/06/2024 au 15/09/2024`,
-    en: `Opening: 6/15/2024 — 9/15/2024`,
-    nl: `Opening: 6/15/2024 — 9/15/2024`,
+    fr: `Dates d'ouverture : du 15/06/2025 au 15/09/2025`,
+    en: `Opening: 6/15/2025 — 9/15/2025`,
+    nl: `Opening: 6/15/2025 — 9/15/2025`,
   };
   const curistsTitle = {
     fr: `Offre spéciale curistes`,
@@ -105,14 +105,19 @@ const Home = ({ lang }) => {
   };
   const bike = {
     first: {
-      fr: `Tours de France 2024 : étape`,
-      en: `Tour de France 2024 : stage`,
-      nl: `Tour de France 2024 : etappe`,
+      fr: `Cette année, la Vallée des Gaves accueille 2 étapes du Tour de France 2025 :`,
+      en: `This year, the Vallée des Gaves will host 2 stages of the 2025 Tour de France :`,
+      nl: `Dit jaar zal de Vallée des Gaves twee etappes van de Tour de France 2025 organiseren :`,
     },
     second: {
-      fr: `, le 13 juillet 2024.`,
-      en: `, Jully 13, 2024`,
-      nl: `, 13 juli 2024.`,
+      fr: `, le 17 et 19 juillet 2025.`,
+      en: `, Jully 17 and 19, 2025.`,
+      nl: `, 17 en 19 juli 2025.`,
+    },
+    third: {
+      fr: ` et `,
+      en: ` and `,
+      nl: ` en `,
     },
   };
 
@@ -225,9 +230,17 @@ const Home = ({ lang }) => {
             {bike.first[lang]}{" "}
             <a
               style={{ color: "#d96846" }}
+              href="https://www.letour.fr/fr/etape-12"
+            >
+              Auch &gt; Hautacam
+            </a>
+            {bike.third[lang]}
+            {""}
+            <a
+              style={{ color: "#d96846" }}
               href="https://www.letour.fr/fr/etape-14"
             >
-              Pau &gt; Saint-Lary-Soulan
+              Pau &gt; Luchon-Superbagnères
             </a>
             {bike.second[lang]}
           </h3>
