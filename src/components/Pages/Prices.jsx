@@ -19,19 +19,19 @@ const Prices = ({ lang }) => {
     nl: `Tenten, caravans en campers`,
   };
   const date1 = {
-    fr: `Basse saison : du 15/06/2025 au 05/07/2025 et du 16/08/2025 au 15/09/2025.`,
-    en: `Low season: 6/15/2025 — 7/05/2025 and 8/16/2025 — 9/15/2025.`,
-    nl: `Laagseizoen: 6/15/2025 — 7/05/2025 en 8/16/2025 — 9/15/2025.`,
+    fr: `Basse saison : du 15/06/2026 au 04/07/2026 et du 15/08/2026 au 15/09/2026.`,
+    en: `Low season: 6/15/2026 — 7/04/2026 and 8/15/2026 — 9/15/2026.`,
+    nl: `Laagseizoen: 6/15/2026 — 7/04/2026 en 8/15/2026 — 9/15/2026.`,
   };
   const date2 = {
-    fr: `Haute saison : du 05/07/2025 au 16/08/2025.`,
-    en: `High season: 7/05/2025 — 8/16/2025.`,
-    nl: `Hoogseizoen: 7/05/2025 — 8/16/2025.`,
+    fr: `Haute saison : du 04/07/2026 au 15/08/2026.`,
+    en: `High season: 7/04/2026 — 8/15/2026.`,
+    nl: `Hoogseizoen: 7/04/2026 — 8/15/2026.`,
   };
   const date3 = {
-    fr: `Les tarifs ne bougent pas en 2025 !`,
-    en: `Prices do not change in 2025 !`,
-    nl: `Prijzen veranderen niet in 2025 !`,
+    fr: `Les tarifs ne bougent pas en 2026 !`,
+    en: `Prices do not change in 2026 !`,
+    nl: `Prijzen veranderen niet in 2026 !`,
   };
 
   const plan1 = {
