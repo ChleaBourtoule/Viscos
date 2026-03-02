@@ -16,9 +16,9 @@ const Home = ({ lang }) => {
     nl: `Le Viscos is een tweesterrencamping (gerenoveerd in 2017) met 67 plaatsen en 11 stacaravans (8 te huur en 3 woningen), gelegen in een oase van groen boven La Vallée des Gaves. Hier stopt de tijd en wordt rusten een voltijdse bezigheid.`,
   };
   const dates = {
-    fr: `Dates d'ouverture : du 15/06/2025 au 15/09/2025`,
-    en: `Opening: 6/15/2025 — 9/15/2025`,
-    nl: `Opening: 6/15/2025 — 9/15/2025`,
+    fr: `Dates d'ouverture : du 15/06/2026 au 15/09/2026`,
+    en: `Opening: 6/15/2026 — 9/15/2026`,
+    nl: `Opening: 6/15/2026 — 9/15/2026`,
   };
   const curistsTitle = {
     fr: `Offre spéciale curistes`,
@@ -105,19 +105,14 @@ const Home = ({ lang }) => {
   };
   const bike = {
     first: {
-      fr: `Cette année, la Vallée des Gaves accueille 2 étapes du Tour de France 2025 :`,
-      en: `This year, the Vallée des Gaves will host 2 stages of the 2025 Tour de France :`,
-      nl: `Dit jaar zal de Vallée des Gaves twee etappes van de Tour de France 2025 organiseren :`,
+      fr: `Cette année, la Vallée des Gaves accueille le Tour de France 2026 :`,
+      en: `This year, the Vallée des Gaves will host the 2026 Tour de France :`,
+      nl: `Dit jaar is de Vallée des Gaves gastheer van de Ronde van Frankrijk van 2026 :`,
     },
     second: {
-      fr: `, le 17 et 19 juillet 2025.`,
-      en: `, Jully 17 and 19, 2025.`,
-      nl: `, 17 en 19 juli 2025.`,
-    },
-    third: {
-      fr: ` et `,
-      en: ` and `,
-      nl: ` en `,
+      fr: `, le 09 juillet 2026.`,
+      en: `, Jully 09, 2026.`,
+      nl: `, 09 juli 2026.`,
     },
   };
 
@@ -230,17 +225,9 @@ const Home = ({ lang }) => {
             {bike.first[lang]}{" "}
             <a
               style={{ color: "#d96846" }}
-              href="https://www.letour.fr/fr/etape-12"
+              href="https://www.letour.fr/fr/etape-6"
             >
-              Auch &gt; Hautacam
-            </a>
-            {bike.third[lang]}
-            {""}
-            <a
-              style={{ color: "#d96846" }}
-              href="https://www.letour.fr/fr/etape-14"
-            >
-              Pau &gt; Luchon-Superbagnères
+              Pau &gt; Gavarnie-Gèdre
             </a>
             {bike.second[lang]}
           </h3>
